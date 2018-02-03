@@ -1,0 +1,176 @@
+body {
+	color: #555;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.alignleft,
+.wp-caption.alignleft {
+	margin: 0 1em 1em 0;
+}
+
+.alignright,
+.wp-caption.alignright {
+	margin: 0 0 1em 1em;
+}
+
+.button:hover, .ib-edu-button:hover, input#submit:hover, .search-submit:hover, .post-password-form input[type="submit"]:hover, .button-primary:hover, .dm3-btn:hover, .css3-loader-inner div, #main-nav > ul > .current-menu-item > a::after, #main-nav > ul > .current-menu-parent > a::after, #main-nav .sub-menu::before, #user-nav ul::before, .dm3-tabs-testimonials .dm3-tabs-nav .active a, .flex-control-paging .flex-active::after, .owl-page.active span, .product .onsale {
+  background-color: #149dd2;
+}
+.button, .ib-edu-button, input#submit, .search-submit, .post-password-form input[type="submit"], .button-primary, .dm3-btn {
+    border-color: #149dd2;
+    color: #149dd2;
+}
+
+a {
+  color: #149dd2;
+}
+
+.dm3-one-half {
+    width: 48%;
+}
+.dm3-one-third {
+    width: 30.66%;
+}
+.dm3-two-third {
+    width: 65.33%;
+}
+.dm3-one-fourth {
+    width: 22%;
+}
+.dm3-three-fourth {
+    width: 74%;
+}
+.dm3-one-fifth {
+    width: 16.8%;
+}
+.dm3-two-fifth {
+    width: 37.6%;
+}
+.dm3-three-fifth {
+    width: 58.4%;
+}
+.dm3-four-fifth {
+    width: 79.2%;
+}
+.dm3-one-sixth {
+    width: 13.33%;
+}
+.dm3-five-sixth {
+    width: 82.67%;
+}
+.dm3-one-half, .dm3-one-third, .dm3-two-third, .dm3-three-fourth, .dm3-one-fourth, .dm3-one-fifth, .dm3-two-fifth, .dm3-three-fifth, .dm3-four-fifth, .dm3-one-sixth, .dm3-five-sixth {
+    float: left;
+    margin-right: 4%;
+    position: relative;
+}
+.dm3-column-last {
+    clear: right;
+    margin-right: 0 !important;
+}
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+}
+@media (max-width: 767px) {
+  .dm3-one-half, .dm3-one-third, .dm3-two-third, .dm3-three-fourth, .dm3-one-fourth, .dm3-one-fifth, .dm3-two-fifth, .dm3-three-fifth, .dm3-four-fifth, .dm3-one-sixth, .dm3-five-sixth {
+      float: none;
+      margin-right: 0;
+      width: auto;
+  }
+}
+.alert {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.alert h4 {
+    color: inherit;
+    margin-top: 0;
+}
+.alert .alert-link {
+    font-weight: 700;
+}
+.alert > p, .alert > ul {
+    margin-bottom: 0;
+}
+.alert > p + p {
+    margin-top: 5px;
+}
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+.alert-dismissable .close, .alert-dismissible .close {
+    color: inherit;
+    position: relative;
+    right: -21px;
+    top: -2px;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+    color: #2b542c;
+}
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+.alert-info hr {
+    border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+    color: #245269;
+}
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+.alert-warning hr {
+    border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+    color: #66512c;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+.alert-danger hr {
+    border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+    color: #843534;
+}
+#menu-main-menu {
+  font-weight: bold;
+}
+.ib-edu-lessons article h1 a, .entry-title a, .wp-caption-text, blockquote, body .dm3-tabs-testimonials blockquote, .ib-edu-memberships h2 a {
+    color: #333;
+}

@@ -1,0 +1,56 @@
+[dm3_one_half]
+
+<img class="alignnone size-full wp-image-659" src="/wp-content/uploads/2014/11/feature-educator-wp.jpg" alt="feature-educator-wp" width="1100" height="680" />
+<h2>Educator WP Plugin</h2>
+This theme is designed for Educator WP plugin. This theme lets you offer courses online from your WordPress website. Learn more about <a title="Educator WP" href="https://wordpress.org/plugins/ibeducator/" target="_blank">Educator WP</a>.
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+<img class="alignnone size-full wp-image-661" src="/wp-content/uploads/2014/11/feature-customizer.jpg" alt="feature-customizer" width="1100" height="680" />
+<h2>WordPress Customizer</h2>
+Customize the theme easily using the native WordPress Theme Customizer. You can change logo, color, layouts for posts and courses archives, and more.
+
+[/dm3_one_half_last]
+
+[dm3_divider style="space"/]
+
+[dm3_one_half]
+
+<img class="alignnone size-full wp-image-664" src="/wp-content/uploads/2014/11/feature-shortcodes.jpg" alt="feature-shortcodes" width="1100" height="680" />
+<h2>Shortcodes</h2>
+The theme integrates with Dm3Shortcodes custom shortcodes plugin so you can add various shortcodes to posts and pages with ease.
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+<img class="alignnone size-full wp-image-657" src="/wp-content/uploads/2014/11/feature-templates.jpg" alt="feature-templates" width="1100" height="680" />
+<h2>Page Templates</h2>
+This theme adds a number of useful page templates for a full-featured LMS system: Log in page, register page, user profile page.
+
+[/dm3_one_half_last]
+
+[dm3_divider style="dotted"/]
+
+[dm3_one_third]
+<h2>Slideshow Manager</h2>
+Create and edit slideshows easily and attach them to posts and pages using shortcodes. The slideshows plugin creates custom post types for slideshows to make it easy to export/import your slideshows.
+
+[/dm3_one_third]
+
+[dm3_one_third]
+<h2>Widget Ready</h2>
+This theme is widget ready. You can add different widgets to sidebar and footer. You can install the WooSidebars plugin to let you add widgets to posts, pages and taxonomies.
+
+[/dm3_one_third]
+
+[dm3_one_third_last]
+<h2>Support &amp; Updates</h2>
+We will periodically release bug fixes and introduce new features. Plus, you can contact us whenever you find an issue are have a question about the theme features.
+
+[/dm3_one_third_last]
+
+[dm3_divider style="dotted"/]
+<h2 style="text-align: center;">And many more features...</h2>

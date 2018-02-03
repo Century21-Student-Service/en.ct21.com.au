@@ -1,0 +1,140 @@
+application:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    name: VARCHAR(31) NOT NULL
+    dob: VARCHAR(31)
+    address: VARCHAR(255)
+    postcode: VARCHAR(15)
+    phone: VARCHAR(15)
+    mobile: VARCHAR(15)
+    qq: VARCHAR(15)
+    email: VARCHAR(15)
+    education: VARCHAR(255)
+    graduate_institution: VARCHAR(255)
+    ielts: VARCHAR(15)
+    apply_country: VARCHAR(15)
+    apply_institution: VARCHAR(255)
+    apply_course: VARCHAR(255)
+    comment: TEXT
+    passport: VARCHAR(128)
+    graduation_certificate: VARCHAR(128)
+    degree_certificate: VARCHAR(128)
+    academic_transcripts: VARCHAR(128)
+    ielts_transcripts: VARCHAR(128)
+    created_at: INT
+  form:
+    fields:
+      name:
+        widget: text
+        widget_conf:
+          required: 1
+      dob:
+        widget: text
+        widget_conf:
+          required: 1
+      address:
+        widget: text
+        widget_conf:
+          required: 0
+      postcode:
+        widget: text
+        widget_conf:
+          required: 0
+      phone:
+        widget: text
+        widget_conf:
+          required: 0
+      mobile:
+        widget: text
+        widget_conf:
+          required: 1
+      qq:
+        widget: text
+        widget_conf:
+          required: 0
+      email:
+        widget: text
+        widget_conf:
+          required: 1
+      education:
+        widget: text
+        widget_conf:
+          required: 1
+      graduate_institution:
+        widget: text
+        widget_conf:
+          required: 1
+      ielts:
+        widget: text
+        widget_conf:
+          required: 0
+      apply_country:
+        widget: select
+        widget_conf:
+          required: 0
+          options:
+            Australia: Australia
+            Newzealand: New zealand
+      apply_institution:
+        widget: text
+        widget_conf:
+          required: 0
+      apply_course:
+        widget: text
+        widget_conf:
+          required: 0
+      comment:
+        widget: textarea
+        widget_conf:
+          required: 0
+          wysiwyg: 0
+      passport:
+        widget: plupfile
+        widget_conf:
+          required: 0
+          upload_dir: files/application
+          # max_file_size in mb
+          max_file_size: 1
+          max_file_number: 10
+          extensions: jpg,png,gif,zip,doc,docx,pdf
+      graduation_certificate:
+        widget: plupfile
+        widget_conf:
+          required: 0
+          upload_dir: files/application
+          # max_file_size in mb
+          max_file_size: 1
+          max_file_number: 10
+          extensions: jpg,png,gif,zip,doc,docx,pdf
+      degree_certificate:
+        widget: plupfile
+        widget_conf:
+          required: 0
+          upload_dir: files/application
+          # max_file_size in mb
+          max_file_size: 1
+          max_file_number: 10
+          extensions: jpg,png,gif,zip,doc,docx,pdf
+      academic_transcripts:
+        widget: plupfile
+        widget_conf:
+          required: 0
+          upload_dir: files/application
+          # max_file_size in mb
+          max_file_size: 1
+          max_file_number: 10
+          extensions: jpg,png,gif,zip,doc,docx,pdf
+      ielts_transcripts:
+        widget: plupfile
+        widget_conf:
+          required: 0
+          upload_dir: files/application
+          # max_file_size in mb
+          max_file_size: 1
+          max_file_number: 10
+          extensions: jpg,png,gif,zip,doc,docx,pdf
+          
+    names:
+      en: Application
+      zh: 申请

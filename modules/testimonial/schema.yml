@@ -1,0 +1,34 @@
+testimonial:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    name: VARCHAR(31) NOT NULL
+    image: VARCHAR(127) NOT NULL
+    comment: VARCHAR(127) NOT NULL
+    from: VARCHAR(255)
+  form:
+    fields:
+      name:
+        widget: text
+        widget_conf:
+          required: 1
+      image:
+        widget: image
+        widget_conf:
+          required: 1
+          multiple: 0
+          upload_dir: files/testimonial
+          transform:
+            dimension: 150x150
+      comment:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 0
+      from:
+        widget: text
+        widget_conf:
+          required: 0
+    names:
+      en: Testimonial
+      zh: 客户评语

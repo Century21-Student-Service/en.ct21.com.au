@@ -1,0 +1,130 @@
+routing:
+  index:
+    path: ^\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/index
+  # direct to original theme page
+  original_theme:
+    path: ^\/original\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/original
+  country:
+    path: ^\/country\/(\d+)\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/country
+  news:
+    path: ^\/news\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/news
+  news_single:
+    path: ^\/news\/(\d+)\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/news_single
+#  apply:
+#    path: ^\/apply\/?$
+#    isSecure: 0
+#    i18n: 0
+#    controller: site/apply
+  apply_form:
+    path: ^\/apply\-form\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/apply_form
+  institution:
+    path: ^\/institution\/(\d+)\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/institution
+  course:
+    path: ^\/course\/(\d+)\/?$
+    isSecure: 0
+    i18n: 0
+    controller: site/course
+
+
+assets:
+  frontend:
+    css:
+      original:
+        path: .?
+        position: top
+        weight: 10
+        source: site/assets/original/css/style.css
+      original_editor:
+        path: .?
+        position: top
+        weight: 10
+        source: site/assets/original/css/editor-style.css
+      original_owl:
+        path: .?
+        position: top
+        weight: 10
+        source: site/assets/original/css/owl.carousel.css
+      original_owl_theme:
+        path: .?
+        position: top
+        weight: 11
+        source: site/assets/original/css/owl.theme.css
+      original_owl_transitions:
+        path: .?
+        position: top
+        weight: 12
+        source: site/assets/original/css/owl.transitions.css
+      original_flexslider:
+        path: .?
+        position: top
+        weight: 12
+        source: site/assets/original/css/flexslider.css
+      fontawesome:
+        path: .?
+        position: top
+        weight: 10
+        source: https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css
+      
+      site:
+        path: .?
+        position: top
+        weight: 40
+        source: site/assets/css/style.css
+        
+    js:
+      original:
+        path: .?
+        position: bottom
+        weight: 10
+        source: site/assets/original/js/script.js
+#      original_modernizr:
+#        path: .?
+#        position: bottom
+#        weight: 10
+#        source: site/assets/original/js/modernizr.js
+#      original_owl:
+#        path: .?
+#        position: bottom
+#        weight: 10
+#        source: site/assets/original/js/owl.carousel.js
+#      original_flexslider:
+#        path: .?
+#        position: bottom
+#        weight: 10
+#        source: site/assets/original/js/jquery.flexslider.js
+#      original_base:
+#        path: .?
+#        position: bottom
+#        weight: 10
+#        source: site/assets/original/js/base.js
+#      original_main:
+#        path: .?
+#        position: bottom
+#        weight: 20
+#        source: site/assets/original/js/main.js
+      site:
+        path: .?
+        position: bottom
+        weight: 30
+        source: site/assets/js/script.js

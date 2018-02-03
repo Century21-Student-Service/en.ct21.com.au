@@ -1,0 +1,141 @@
+== 1.6.0 ==
+
+* Modified the custom registration and profile forms. Added the possibility to display captcha on the custom registration form.
+* Some translation strings were modified (please check the custom registration and the custom edit profile forms, because you might need to translate some modified and new strings).
+* Display course meta on the single course page.
+* Updated styles to support new features in the Educator plugin.
+* Added the class attribute to the columns shortcode (e.g., [dm3_one_half class="my-class"]The content.[/dm3_one_half]).
+* Added the class attribute to the [page_section] shortcode. You can use it like [page_section class="my-custom-class"]My content...[/page_section].
+* Updated custom plugins.
+* And other improvements.
+
+
+== 1.5.0 ==
+
+* Added WooCommerce support.
+* When user clicks on his/her username in the page header, he/she is redirected to account page (WooCommerce's "My Account" if WooCommerce is enabled or default Profile page provided by the theme).
+* Various bug fixes and improvements.
+
+
+== 1.4.0 ==
+
+* Added a filter for adding custom share links.
+* Added more links (social networks) to the "Educator Theme Contact" widget.
+* You can enable the "Continue reading" link for posts in Appearance > Customize > Advanced.
+* Added the "Compact" layout choice for the lessons which are displayed on the single course page (Appearance > Customize > Page Layouts > "Lessons on the course page" setting).
+* Added styles for the WordPress' ".screen-reader-text" CSS class. All elements with this class are hidden.
+* Other fixes and improvements.
+
+
+== 1.3.2 ==
+
+* Added support for Educator 1.4.3
+* Added more attributes to the [educator_posts] shortcode. The following new attributes are available: categories, ids.
+* Updated the TGM Plugin Activation Class to the new version (2.4.1) due to the latest WordPress security alerts.
+* Other improvements and bug fixes.
+
+
+== 1.3.1 ==
+
+* Added an action hook, which can be used to add custom HTML to the page toolbar (educator_theme_toolbar).
+* Fixed a primary menu bug, when the submenu appeared without the fade in/out effect.
+* New: the "Toolbar Text" field in customizer accepts the following HTML tags: <a>, <strong>
+* Fixed a bug when the fixed primary menu's links did not resize on scroll if the primary menu's name is not "Main Menu".
+* Added filter hooks to the post and course meta (edutheme_course_meta_include, edutheme_course_meta, edutheme_meta_include, edutheme_meta).
+* Added page subtitle filter (edutheme_subtitle).
+* Added the "Lecturer's profile link goes to" setting to Appearance > Customize > Advanced.
+* Fixed the fixed footer look for mobile devices (the footer becomes fixed if you uncheck the "Enable Footer Widgets" checkbox in Appearance > Customizer > Footer Settings).
+* Added "Disable the default lightbox" setting to Appearance > Customize > Advanced.
+* Added a PHP function to output a lecturer's info (edutheme_lecturer_bio( $user_id )).
+* Added the Pinterest link setting to the page toolbar.
+* Added the toolbar social links filter (edutheme_social_links).
+
+
+== 1.3.0 ==
+
+* Added support for Educator 1.4.0 (the plugin).
+* Modified: The "Payment" and the "Payment thank you" pages were modified in Educator 1.4.0 (the plugin). The theme updates its styles to support the new versions of these pages.
+* Modified: the auth nav (login and register links in the page header) can be overriden in a child theme (defining the "educator_auth_nav" function with your own HTML output).
+* Modified: the title is output using the default WordPress title-tag feature (https://codex.wordpress.org/Title_Tag). This feature is a step forward to standardise the usage if the <title> tag across themes. This change is important to make the theme compatible with various plugins in the future. Please check your page titles after this update (the <title> tag). Also, please go to the "Settings > General" screen in the wp admin and make sure that the Site Title and the Tagline are properly set.
+* Added: the "number" attribute for the educator_courses shortcode (usage: [educator_courses number="15"])
+* Added: allow <br> tag in the footer tag line.
+* Added: the memberships filter on the courses archives page can be removed using the "edutheme_memberships_filter" filter in a child theme.
+* Added: educator_posts shortcode (usage: [educator_posts number="6"]).
+* Fixed: if a course has no lessons, its meta doesn't display the message "0 lessons".
+* Fixed: WordPress AJAX requests are no longer redirected for the logged in users with the "student" role.
+
+
+== 1.2.2 ==
+
+* Added support for the Educator 1.3.2 (the courses shortcode)
+* Added "Wide" page template.
+
+
+== 1.2.1 ==
+
+* Fixed the dropdowns CSS bug.
+* Added the login_url and register_url filters. If the custom theme login and registration pages are setup, WordPress redirects the user to these pages for login and registration.
+* Added the "redirect_to" query var.
+* Added the Instagram option to the toolbar.
+* Added the registration success message to the custom registration page.
+* Deleted the "educator_ib_edu_login_url" function and "ib_educator_login_url" filter from the ib-educator/include/ibeducator.php.
+* The following functions were deprecated: educator_login_url, educator_registration_url.
+
+
+== 1.2.0 ==
+
+* Fixed slashes bug in the student's profile form.
+* Fixed the slideshows autoscroll setting.
+* Fixed the search page title.
+* Added support for Educator WP 1.3.
+* Improved the user's(student's) front end pages management (Profile, Student's Courses, Membership, Payments).
+
+
+== 1.1.1 ==
+
+* Fixed logo height in the fixed menu for large logos.
+* Fixed google font loading (Open Sans).
+* Added the option to hide register/login links from the main menu (Appearance > Customize > Header Settings).
+* Added show_price attribute to the educator_courses shortcode.
+* Added zoom attribute to the dm3_google_map shortcode from the dm3-shortcodes plugin.
+* Fixed mobile menu on resize when the page is initially loaded on desktop.
+* Added .htaccess to the ib-educator/include/plugins folder.
+* Improved the child theme structure. It doesn't use @import to include the parent theme's style.css. This improves performance of the theme.
+
+Please update the child theme too:
+
+1) Find the "Child Theme/ib-educator-child" folder in the theme package that you downloaded from themeforest.
+
+2) If you have the "functions.php" file in your child theme, copy the php code from the "Child Theme/ib-educator-child/functions.php" into your child theme's "functions.php".
+
+3) If you don't have the "functions.php" in your child theme, then just copy the "Child Theme/ib-educator-child/functions.php" to your child theme's directory.
+
+4) Delete the following line from the "style.css" in your child theme:
+@import url('../ib-educator/style.css');
+
+FILES:
+
+Parent theme:
+wp-content/plugins/ib-educator-theme/ib-educator-theme.php
+wp-content/plugins/ib-educator-theme/shortcodes.php
+wp-content/themes/ib-educator/functions.php
+wp-content/themes/ib-educator/header.php
+wp-content/themes/ib-educator/include/customizer.php
+wp-content/themes/ib-educator/include/plugins.php
+wp-content/themes/ib-educator/include/theme-fonts.php
+wp-content/themes/ib-educator/js/main.js
+wp-content/themes/ib-educator/style.css
+wp-content/themes/ib-educator/functions.php
+wp-content/themes/ib-educator/include/plugins/dm3-shortcodes.zip
+wp-content/themes/ib-educator/include/plugins/ib-educator-theme.zip
+wp-content/themes/ib-educator/include/plugins/.htaccess
+
+Child theme:
+ib-educator-child/functions.php
+ib-educator-child/style.css
+
+
+== 1.1.0 ==
+
+* Added "Max Logo Height" option to Customizer (General section).
+* Updated styles for Educator WP 1.2.0

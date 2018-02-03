@@ -1,0 +1,237 @@
+.widget .button:hover {
+  color: #FFF;
+}
+.widget .button {
+  color: #149dd2;
+}
+.dm3-column-last {
+  margin-bottom: 20px;
+}
+.fw-slider .caption-inner {
+  max-width: 80%;
+}
+.owl-item .post-grid .entry-title {
+  text-align: center;
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 20px !important;
+}
+.owl-item .post-body {
+  padding-bottom: 0;
+}
+.owl-item .post-thumb {
+  margin: 0;
+}
+.has-toolbar .fixed-header #page-header-inner {
+  top: 0px;
+}
+.post-body .entry-title {
+  text-align: left;
+}
+.post-grid .entry-title {
+    border-bottom: 2px solid #e7e7e7;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+    padding: 0 0 12px;
+    height: 3em;
+    overflow: hidden;
+}
+#main-logo img {
+  max-height: 60px;
+}
+#main-nav .menu-item a:hover,
+#main-nav .current-menu-item a {
+  color: #149dd2;
+}
+.single .educator-share-links {
+  margin-bottom: 0px;
+}
+#msg ul li {
+  margin-bottom: 0;
+}
+.news {
+  position: relative;
+  padding: 20px 0;
+  /*height: 100px;*/
+  top: -20px;
+  /*overflow: hidden;*/
+  border-bottom: dotted #AAA 1px;
+}
+.news.last {
+  border-bottom: none;
+}
+@media (max-width: 767px) {
+  .news {
+    min-height: 100px;
+    overflow: hidden;
+  }
+}
+.news .left {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.news .left img {
+  width: 100px;
+  height: 100px;
+}
+.news .right {
+  padding-left: 115px;
+}
+.news a {
+  color: #333;
+}
+.news a:hover {
+  color: #149dd2;
+}
+.news h3 {
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+.news p {
+  margin-bottom: 0;
+}
+#video-container {
+  height: 475px;
+}
+/*#video-container iframe {
+  margin-top: 11%;
+}
+@media (max-width: 1120px) {
+  #video-container iframe {
+    margin-top: 20%;
+  }
+}
+@media (max-width: 960px) {
+  #video-container iframe {
+    margin-top: 33%;
+  }
+}
+@media (max-width: 767px) {
+  #video-container iframe {
+    margin-top: 0;
+  }
+}*/
+#shortcuts {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+#shortcuts .dm3-box-icon-icon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+#shortcuts .dm3-box-icon-content {
+  padding-left: 140px;
+}
+.author-from {
+  color: #AAA;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.pagination {
+  margin: 0px;
+}
+.pagination li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+.pagination li a {
+  display: block;
+  padding: 6px;
+  font-weight: bold;
+  color: #555;
+}
+.pagination li.active a {
+  color: #057caa;
+}
+.pagination .text {
+  float: left;
+  padding-top: 10px;
+  line-height: inherit;
+}
+#banner {
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+@media (max-width: 767px) {
+  #banner {
+    height: 250px;
+  }
+}
+#banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sub-section {
+  border-top: 1px dashed #e7e7e7;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.card {
+  margin-bottom: 15px;
+  position: relative;
+  background: #FAFAFA;
+  padding: 7px;
+}
+.card a {
+  color: inherit;
+}
+.card a:hover {
+  color: #149dd2;
+}
+.card .left img {
+  display: block;
+  width: 150px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border: 5px #EAEAEA solid;
+}
+.card .right {
+  padding-left: 185px;
+  min-height: 105px;
+}
+.highlight-list {
+  list-style: none;
+  margin-left: 0px;
+}
+.highlight-list li a {
+  color: inherit;
+}
+.highlight-list li a:hover {
+  color: #149dd2;
+}
+.highlight-list ul {
+  margin-bottom: 0px;
+  list-style: none;
+}
+.widget a {
+  color: inherit;
+}
+.widget a:hover {
+  color: #149dd2;
+}
+.breadcrumb {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+.sub-menu {
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.form-group {
+  margin-bottom: 10px;
+}

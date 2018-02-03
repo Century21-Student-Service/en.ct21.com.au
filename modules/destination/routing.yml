@@ -1,0 +1,22 @@
+routing:
+
+  admin_country_list:
+    path: ^\/admin\/country\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: destination/backend/country_list
+  admin_country_edit:
+    path: ^\/admin\/country\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: destination/backend/country_edit
+  admin_country_create:
+    path: ^\/admin\/country\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: destination/backend/country_create
+  admin_country_delete:
+    path: ^\/admin\/country\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: destination/backend/country_delete

@@ -1,0 +1,67 @@
+menu:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    country_id: INT
+    name: VARCHAR(255) NOT NULL
+    root_menu_item_id: INT DEFAULT NULL
+    reserved: TINYINT DEFAULT 0
+  indexes:
+    - `menu-root_menu_item_id` (`root_menu_item_id`)
+    - `menu-country_id` (`country_id`)
+  form:
+    fields:
+      name:
+        widget: text
+        widget_conf:
+          required: 1
+    names:
+      en: Menu
+      zh: 菜单
+    
+menu_item:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    name: VARCHAR(31) NOT NULL
+    uri: VARCHAR(512) NOT NULL
+    menu_id: INT NOT NULL
+    parent_id: INT
+    weight: TINYINT DEFAULT 99
+    display: TINYINT DEFAULT 1
+  fks:
+    menu_id:
+      foreign_key: menu_id
+      references: menu.id
+      on_delete: CASCADE
+      on_update: CASCADE
+    parent_id:
+      foreign_key: parent_id
+      references: menu_item.id
+      on_delete: CASCADE
+      on_update: CASCADE
+  form:
+    fields:
+      name:
+        widget: text
+        widget_conf:
+          required: 1
+      uri:
+        widget: text
+        widget_conf:
+          required: 1
+      menu_id:
+        widget: select
+        widget_conf:
+          required: 1
+          options:
+            1: -- select --
+      parent_id:
+        widget: select
+        widget_conf:
+          required: 1
+          options:
+            1: -- root --
+    names:
+      en: Menu item
+      zh: 菜单项目

@@ -1,0 +1,47 @@
+<h1>Heading 1</h1>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h2>Heading 2</h2>
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+<h3>Heading 3</h3>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h4>Heading 4</h4>
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+<h5>Heading 5</h5>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h6>Heading 6</h6>
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+<h3>Align Left</h3>
+[caption id="attachment_232" align="alignleft" width="300"]<a href="/wp-content/uploads/2014/10/course-business.jpg"><img class="wp-image-232 size-medium" src="/wp-content/uploads/2014/10/course-business-300x197@2x.jpg" alt="Success" width="300" height="197" /></a> Market, analyze, success[/caption]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+<h3>Align Right</h3>
+[caption id="attachment_261" align="alignright" width="300"]<a href="/wp-content/uploads/2014/10/gear-to-success.jpg"><img class="wp-image-261 size-medium" src="/wp-content/uploads/2014/10/gear-to-success-300x197@2x.jpg" alt="" width="300" height="197" /></a> Business Process[/caption]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+<h3>Center Align</h3>
+[caption id="attachment_411" align="aligncenter" width="300"]<a href="/wp-content/uploads/2014/10/students-recommend.jpg"><img class="size-medium wp-image-411" src="/wp-content/uploads/2014/10/students-recommend-300x197@2x.jpg" alt="Image number 4" width="300" height="197" /></a> Image number 4[/caption]
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<h3>More Examples</h3>
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+<blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</blockquote>
+<strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do <em>eiusmod tempor incididunt</em> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <del>exercitation ullamco</del> laboris nisi ut aliquip ex ea <span style="text-decoration: underline;">commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<ol>
+	<li>List item number 1</li>
+	<li>List item number 2</li>
+	<li>List item number 3</li>
+	<li>List item number 4</li>
+	<li>List item number 5</li>
+</ol>
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+<ul>
+	<li>List item number 1</li>
+	<li>List item number 2</li>
+	<li>List item number 3</li>
+	<li>List item number 4</li>
+	<li>List item number 5</li>
+</ul>
+<pre>/* At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos */
+#post-25 .entry-title {
+    color: green;
+}</pre>

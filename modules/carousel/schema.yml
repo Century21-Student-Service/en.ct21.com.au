@@ -1,0 +1,45 @@
+carousel:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    title: VARCHAR(255) NOT NULL
+    image: VARCHAR(255) NOT NULL
+    content: VARCHAR(255)
+    button_text: VARCHAR(127)
+    button_link: VARCHAR(255)
+    weight: TINYINT DEFAULT 0
+  form:
+    fields:
+      title:
+        widget: text
+        widget_conf:
+          required: 1
+      image:
+        widget: image
+        widget_conf:
+          required: 1
+          multiple: 0
+          upload_dir: files/carousel
+          transform:
+            dimension: 1140x385
+      content:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 1
+          wysiwyg_toolbar: standard
+      button_text:
+        widget: text
+        widget_conf:
+          required: 1
+      button_link:
+        widget: text
+        widget_conf:
+          required: 1
+      weight:
+        widget: text
+        widget_conf:
+          required: 0
+    names:
+      en: Carousel
+      zh: 首页横幅

@@ -1,0 +1,48 @@
+course:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    country_id: INT NOT NULL
+    title: VARCHAR(127)
+    url: VARCHAR(512)
+    content: TEXT
+    weight: INT DEFAULT 0
+  fks:
+    country_id:
+      foreign_key: country_id
+      references: country.id
+      on_delete: CASCADE
+      on_update: CASCADE
+  form:
+    fields:
+      title:
+        widget: text
+        widget_conf:
+          required: 1
+      country_id:
+        widget: select
+        widget_conf:
+          required: 1
+          options:
+            1: Australia
+            2: New Zealand
+            3: USA
+            4: Canada
+            5: England
+      content:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 1
+          wysiwyg_toolbar: standard
+      url:
+        widget: text
+        widget_conf:
+          required: 0
+      weight:
+        widget: text
+        widget_conf:
+          required: 0
+    names:
+      en: Course
+      zh: 推荐课程

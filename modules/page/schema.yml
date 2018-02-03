@@ -1,0 +1,32 @@
+page:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    uri: VARCHAR(127) NOT NULL UNIQUE
+    title: VARCHAR(255) NOT NULL
+    controller: VARCHAR(127) DEFAULT "page/default"
+    content: TEXT
+    published: TINYINT DEFAULT 1
+    reserved: TINYINT DEFAULT 0
+  form:
+    fields:
+      uri:
+        widget: text
+        widget_conf:
+          required: 1
+      title:
+        widget: text
+        widget_conf:
+          required: 1
+      content:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 1
+          wysiwyg_toolbar: standard
+      published:
+        widget: checkbox_single
+        widget_conf: 
+    names:
+      en: Page
+      zh: 基本页面

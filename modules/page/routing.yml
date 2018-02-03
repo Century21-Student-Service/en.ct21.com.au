@@ -1,0 +1,22 @@
+routing:
+
+  admin_page_list:
+    path: ^\/admin\/page\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: page/backend/page_list
+  admin_page_edit:
+    path: ^\/admin\/page\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: page/backend/page_edit
+  admin_page_create:
+    path: ^\/admin\/page\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: page/backend/page_create
+  admin_page_delete:
+    path: ^\/admin\/page\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: page/backend/page_delete

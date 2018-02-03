@@ -1,0 +1,22 @@
+routing:
+
+  admin_institution_list:
+    path: ^\/admin\/institution\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: institution/backend/institution_list
+  admin_institution_edit:
+    path: ^\/admin\/institution\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: institution/backend/institution_edit
+  admin_institution_create:
+    path: ^\/admin\/institution\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: institution/backend/institution_create
+  admin_institution_delete:
+    path: ^\/admin\/institution\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: institution/backend/institution_delete

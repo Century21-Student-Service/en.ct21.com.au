@@ -1,0 +1,934 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Educator WP Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-01 05:02-0500\n"
+"PO-Revision-Date: 2015-08-01 05:04-0500\n"
+"Last-Translator: English Team\n"
+"Language-Team: English <contact@incrediblebytes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_n_noop:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../archive-ib_educator_course.php:23 ../archive-ib_educator_course.php:45
+#: ../author.php:94 ../taxonomy-ib_educator_category.php:23
+#: ../taxonomy-ib_educator_category.php:45
+msgid "No courses found."
+msgstr ""
+
+#: ../archive-ib_educator_lesson.php:22 ../archive-ib_educator_lesson.php:43
+msgid "No lessons found."
+msgstr ""
+
+#: ../author.php:22
+msgid "Lecturer Profile"
+msgstr ""
+
+#: ../author.php:24
+msgid "Author Profile"
+msgstr ""
+
+#: ../author.php:48 ../include/customizer.php:1494
+msgid "Posts"
+msgstr ""
+
+#: ../author.php:49 ../include/customizer.php:1493
+#: ../include/template-tags.php:128 ../templates/user.php:95
+msgid "Courses"
+msgstr ""
+
+#: ../author.php:96
+msgid "No posts found."
+msgstr ""
+
+#: ../comments.php:17
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:24 ../comments.php:42
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:25 ../comments.php:43
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:26 ../comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:49
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-grid.php:14
+msgid "This post is password protected."
+msgstr ""
+
+#: ../content-grid.php:19 ../content.php:17
+#: ../ibeducator/content-membership.php:28
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../content-none.php:6
+#, php-format
+msgid "Ready to publish your first post? %s."
+msgstr ""
+
+#: ../content-none.php:7
+msgid "Get started here"
+msgstr ""
+
+#: ../content-none.php:14 ../content-none.php:23
+msgid "Not Found"
+msgstr ""
+
+#: ../content-none.php:17
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../content-none.php:26
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../content-single.php:6 ../include/template-tags.php:218
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: ../content-single.php:23 ../page.php:16 ../templates/full-width.php:20
+#: ../templates/wide.php:19
+msgid "Pages:"
+msgstr ""
+
+#: ../functions.php:54
+msgid "Top primary menu"
+msgstr ""
+
+#: ../functions.php:55
+msgid "Logged in user menu"
+msgstr ""
+
+#: ../functions.php:56
+msgid "Footer menu"
+msgstr ""
+
+#: ../functions.php:88
+msgid "Grid"
+msgstr ""
+
+#: ../functions.php:89
+msgid "Main Column"
+msgstr ""
+
+#: ../functions.php:140
+msgid "Main Sidebar"
+msgstr ""
+
+#: ../functions.php:142
+msgid "The page sidebar."
+msgstr ""
+
+#: ../functions.php:162
+#, php-format
+msgid "Footer Column %d"
+msgstr ""
+
+#: ../functions.php:164
+msgid "The widgets in the page footer."
+msgstr ""
+
+#: ../functions.php:313
+msgid "Home"
+msgstr ""
+
+#: ../functions.php:370
+#, php-format
+msgid ""
+"<strong>An update to the theme is available!</strong> The version of "
+"installed theme is %s. The latest version is %s."
+msgstr ""
+
+#: ../functions.php:371
+msgid "Could not check for the theme update."
+msgstr ""
+
+#: ../functions.php:391
+msgid "Username cannot be empty."
+msgstr ""
+
+#: ../functions.php:394
+msgid "This username is invalid because it uses illegal characters."
+msgstr ""
+
+#: ../functions.php:397
+msgid "This username is already registered."
+msgstr ""
+
+#: ../functions.php:400
+msgid "Email cannot be empty."
+msgstr ""
+
+#: ../functions.php:403
+msgid "Please enter a valid email."
+msgstr ""
+
+#: ../functions.php:406
+msgid "This email is already registered."
+msgstr ""
+
+#: ../functions.php:409
+#, php-format
+msgid "The password should be at least %d characters long."
+msgstr ""
+
+#: ../functions.php:412
+msgid "Passwords do not match."
+msgstr ""
+
+#: ../functions.php:415
+msgid "Your nonce did not verify."
+msgstr ""
+
+#: ../functions.php:418 ../templates/register.php:34
+msgid "Registration is disabled."
+msgstr ""
+
+#: ../functions.php:421
+msgid "The captcha check failed."
+msgstr ""
+
+#: ../header.php:115
+msgid "Log Out"
+msgstr ""
+
+#: ../header.php:126
+msgid "Search..."
+msgstr ""
+
+#: ../single-ib_educator_lesson.php:23
+msgid "Lessons"
+msgstr ""
+
+#: ../single-ib_educator_lesson.php:37 ../single-ib_educator_lesson.php:43
+#: ../ibeducator/content-lesson.php:13 ../ibeducator/content-lesson.php:32
+msgid "Quiz"
+msgstr ""
+
+#: ../ibeducator/content-membership.php:43
+msgid "Purchase"
+msgstr ""
+
+#: ../ibeducator/shortcode-memberships.php:50
+msgid "No memberships found."
+msgstr ""
+
+#: ../include/customizer.php:206
+msgid "General"
+msgstr ""
+
+#: ../include/customizer.php:207
+msgid "General theme settings."
+msgstr ""
+
+#: ../include/customizer.php:228
+msgid "Logo"
+msgstr ""
+
+#: ../include/customizer.php:252
+msgid "Logo 2x"
+msgstr ""
+
+#: ../include/customizer.php:275
+msgid "Logo Max Height"
+msgstr ""
+
+#: ../include/customizer.php:296
+msgid "Theme Updates Notifications"
+msgstr ""
+
+#: ../include/customizer.php:300
+msgid ""
+"The theme will check incrediblebytes.com for updates. If there is an update "
+"available, it will display an admin notice."
+msgstr ""
+
+#: ../include/customizer.php:325
+msgid "Font Settings"
+msgstr ""
+
+#: ../include/customizer.php:326
+msgid "Google fonts settings."
+msgstr ""
+
+#: ../include/customizer.php:345
+msgid "Headings Font"
+msgstr ""
+
+#: ../include/customizer.php:368
+msgid "Body Font"
+msgstr ""
+
+#: ../include/customizer.php:391
+msgid "Character Sets"
+msgstr ""
+
+#: ../include/customizer.php:414
+msgid "Font Size"
+msgstr ""
+
+#: ../include/customizer.php:442
+msgid "Headings Font Weight"
+msgstr ""
+
+#: ../include/customizer.php:465
+msgid "Bold Text Font Weight"
+msgstr ""
+
+#: ../include/customizer.php:487
+msgid "Header Settings"
+msgstr ""
+
+#: ../include/customizer.php:506
+msgid "Fixed Header"
+msgstr ""
+
+#: ../include/customizer.php:527
+msgid "Show the Log in/Register Links in the Main Menu"
+msgstr ""
+
+#: ../include/customizer.php:540
+msgid "Toolbar Settings"
+msgstr ""
+
+#: ../include/customizer.php:559
+msgid "Enable Toolbar"
+msgstr ""
+
+#: ../include/customizer.php:581
+msgid "Toolbar Text"
+msgstr ""
+
+#: ../include/customizer.php:603
+msgid "Links to Social Networks"
+msgstr ""
+
+#: ../include/customizer.php:607
+#, php-format
+msgid ""
+"List the names of the social networks. The names must be separated by "
+"spaces. Available social networks: %s"
+msgstr ""
+
+#: ../include/customizer.php:626
+msgid "Facebook URL"
+msgstr ""
+
+#: ../include/customizer.php:648
+msgid "Google+ URL"
+msgstr ""
+
+#: ../include/customizer.php:670
+msgid "Twitter URL"
+msgstr ""
+
+#: ../include/customizer.php:692
+msgid "Linkedin URL"
+msgstr ""
+
+#: ../include/customizer.php:714
+msgid "Youtube URL"
+msgstr ""
+
+#: ../include/customizer.php:736
+msgid "Vimeo URL"
+msgstr ""
+
+#: ../include/customizer.php:758
+msgid "Instagram URL"
+msgstr ""
+
+#: ../include/customizer.php:780
+msgid "Pinterest URL"
+msgstr ""
+
+#: ../include/customizer.php:802
+msgid "Vk URL"
+msgstr ""
+
+#: ../include/customizer.php:816
+msgid "Page Layouts"
+msgstr ""
+
+#: ../include/customizer.php:817
+msgid "Select layouts for various pages of your website."
+msgstr ""
+
+#: ../include/customizer.php:836
+msgid "Sidebar Position"
+msgstr ""
+
+#: ../include/customizer.php:841
+msgid "Right"
+msgstr ""
+
+#: ../include/customizer.php:842
+msgid "Left"
+msgstr ""
+
+#: ../include/customizer.php:861
+msgid "Blog Layout"
+msgstr ""
+
+#: ../include/customizer.php:866 ../include/customizer.php:892
+msgid "List with sidebar"
+msgstr ""
+
+#: ../include/customizer.php:867 ../include/customizer.php:893
+msgid "Grid with sidebar"
+msgstr ""
+
+#: ../include/customizer.php:868 ../include/customizer.php:894
+msgid "Grid without sidebar"
+msgstr ""
+
+#: ../include/customizer.php:887
+msgid "Courses Layout"
+msgstr ""
+
+#: ../include/customizer.php:913
+msgid "Lessons on the course page"
+msgstr ""
+
+#: ../include/customizer.php:918 ../include/customizer.php:943
+msgid "Default"
+msgstr ""
+
+#: ../include/customizer.php:919
+msgid "Compact"
+msgstr ""
+
+#: ../include/customizer.php:938
+msgid "Shop Layout"
+msgstr ""
+
+#: ../include/customizer.php:944
+msgid "Full width"
+msgstr ""
+
+#: ../include/customizer.php:963
+msgid "Shop Columns"
+msgstr ""
+
+#: ../include/customizer.php:993
+msgid "Main Color"
+msgstr ""
+
+#: ../include/customizer.php:1017
+msgid "Hover Color"
+msgstr ""
+
+#: ../include/customizer.php:1041
+msgid "Text Color"
+msgstr ""
+
+#: ../include/customizer.php:1065
+msgid "Headings Color"
+msgstr ""
+
+#: ../include/customizer.php:1089
+msgid "Hover Background Color"
+msgstr ""
+
+#: ../include/customizer.php:1093 ../include/customizer.php:1118
+msgid "Sub menu items, share buttons, etc."
+msgstr ""
+
+#: ../include/customizer.php:1114
+msgid "Hover Text Color"
+msgstr ""
+
+#: ../include/customizer.php:1129
+msgid "Share Settings"
+msgstr ""
+
+#: ../include/customizer.php:1148
+msgid "Enable Share Buttons"
+msgstr ""
+
+#: ../include/customizer.php:1169
+msgid "Share buttons"
+msgstr ""
+
+#: ../include/customizer.php:1173
+#, php-format
+msgid ""
+"List the names of the share buttons you would like to use. The names must be "
+"separated by spaces. Available share buttons: %s"
+msgstr ""
+
+#: ../include/customizer.php:1191
+msgid "Facebook App ID"
+msgstr ""
+
+#: ../include/customizer.php:1195
+msgid "This ID is required to create a Facebook share link."
+msgstr ""
+
+#: ../include/customizer.php:1213
+msgid "Twitter via"
+msgstr ""
+
+#: ../include/customizer.php:1217
+msgid "Your twitter screen name."
+msgstr ""
+
+#: ../include/customizer.php:1227
+msgid "Log in/register"
+msgstr ""
+
+#: ../include/customizer.php:1246
+msgid "Log In Page"
+msgstr ""
+
+#: ../include/customizer.php:1268
+msgid "Register Page"
+msgstr ""
+
+#: ../include/customizer.php:1290
+msgid "Profile"
+msgstr ""
+
+#: ../include/customizer.php:1313
+msgid "Enable custom user flow"
+msgstr ""
+
+#: ../include/customizer.php:1336
+msgid "Enable captcha on registration form"
+msgstr ""
+
+#: ../include/customizer.php:1357
+msgid "ReCaptcha Site Key"
+msgstr ""
+
+#: ../include/customizer.php:1378
+msgid "ReCaptcha Secret Key"
+msgstr ""
+
+#: ../include/customizer.php:1391
+msgid "Footer Settings"
+msgstr ""
+
+#: ../include/customizer.php:1410
+msgid "Enable Footer Widgets"
+msgstr ""
+
+#: ../include/customizer.php:1431
+msgid "Footer Layout"
+msgstr ""
+
+#: ../include/customizer.php:1436
+msgid "3 columns"
+msgstr ""
+
+#: ../include/customizer.php:1437
+msgid "4 columns"
+msgstr ""
+
+#: ../include/customizer.php:1456
+msgid "Footer Copyright Notice"
+msgstr ""
+
+#: ../include/customizer.php:1460
+#, php-format
+msgid "You may use these HTML tags and attributes: %s"
+msgstr ""
+
+#: ../include/customizer.php:1469
+msgid "Advanced"
+msgstr ""
+
+#: ../include/customizer.php:1488
+msgid "Lecturer&apos;s profile link goes to"
+msgstr ""
+
+#: ../include/customizer.php:1513
+msgid "Disable the default lightbox"
+msgstr ""
+
+#: ../include/customizer.php:1534
+msgid "Enable the Continue reading link"
+msgstr ""
+
+#: ../include/customizer.php:1555
+msgid "Enable WooCommerce Support"
+msgstr ""
+
+#: ../include/ibeducator.php:33
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: ../include/ibeducator.php:42
+#, php-format
+msgid "1 lesson"
+msgid_plural "%d lessons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/ibeducator.php:59
+msgid ", "
+msgstr ""
+
+#: ../include/ibeducator.php:86
+msgid "Free"
+msgstr ""
+
+#: ../include/plugins.php:101
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../include/plugins.php:102
+msgid "Install Plugins"
+msgstr ""
+
+#: ../include/plugins.php:103
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../include/plugins.php:104
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../include/plugins.php:105
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:106
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:107
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:108
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:109
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:110
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:111
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:112
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:113
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:114
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../include/plugins.php:115
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../include/plugins.php:116
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../include/plugins.php:117
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../include/template-tags.php:54
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../include/template-tags.php:68
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: ../include/template-tags.php:101
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../include/template-tags.php:165 ../woocommerce/loop/pagination.php:23
+#, php-format
+msgid "Page %d of %d"
+msgstr ""
+
+#: ../include/template-tags.php:244
+msgid "Share:"
+msgstr ""
+
+#: ../include/template-tags.php:258 ../include/template-tags.php:523
+#: ../include/widgets.php:22
+msgid "Facebook"
+msgstr ""
+
+#: ../include/template-tags.php:263 ../include/template-tags.php:524
+#: ../include/widgets.php:24
+msgid "Google+"
+msgstr ""
+
+#: ../include/template-tags.php:268 ../include/template-tags.php:525
+#: ../include/widgets.php:23
+msgid "Twitter"
+msgstr ""
+
+#: ../include/template-tags.php:280
+msgid "Share"
+msgstr ""
+
+#: ../include/template-tags.php:313
+msgid "Category"
+msgstr ""
+
+#: ../include/template-tags.php:329 ../include/template-tags.php:376
+msgid "All"
+msgstr ""
+
+#: ../include/template-tags.php:362
+msgid "Membership"
+msgstr ""
+
+#: ../include/template-tags.php:398
+#, php-format
+msgid "%d course(s)"
+msgstr ""
+
+#: ../include/template-tags.php:438
+msgid "Related Courses"
+msgstr ""
+
+#: ../include/template-tags.php:480 ../templates/login.php:24
+#: ../templates/register.php:26
+msgid "Log in"
+msgstr ""
+
+#: ../include/template-tags.php:481 ../templates/login.php:25
+#: ../templates/register.php:27 ../templates/register.php:127
+msgid "Register"
+msgstr ""
+
+#: ../include/template-tags.php:492
+msgid "Lecturer"
+msgstr ""
+
+#: ../include/template-tags.php:508
+msgid "View Profile"
+msgstr ""
+
+#: ../include/template-tags.php:526
+msgid "Linkedin"
+msgstr ""
+
+#: ../include/template-tags.php:527 ../include/widgets.php:25
+msgid "Youtube"
+msgstr ""
+
+#: ../include/template-tags.php:528 ../include/widgets.php:26
+msgid "Vimeo"
+msgstr ""
+
+#: ../include/template-tags.php:529 ../include/widgets.php:27
+msgid "Instagram"
+msgstr ""
+
+#: ../include/template-tags.php:530 ../include/widgets.php:28
+msgid "Pinterest"
+msgstr ""
+
+#: ../include/template-tags.php:531 ../include/widgets.php:29
+msgid "Vk"
+msgstr ""
+
+#: ../include/widgets.php:13
+msgid "Educator Theme Contact"
+msgstr ""
+
+#: ../include/widgets.php:15
+msgid "Use this widget to display your contact info."
+msgstr ""
+
+#: ../include/widgets.php:21 ../templates/register.php:83
+#: ../templates/user.php:186
+msgid "Email"
+msgstr ""
+
+#: ../include/widgets.php:118
+msgid "Title:"
+msgstr ""
+
+#: ../include/widgets.php:123
+msgid "Text:"
+msgstr ""
+
+#: ../include/widgets.php:137
+msgid "Order:"
+msgstr ""
+
+#: ../include/woocommerce.php:63
+msgid "View shopping cart"
+msgstr ""
+
+#: ../include/woocommerce.php:64
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../templates/login.php:31
+msgid "Registration complete."
+msgstr ""
+
+#: ../templates/login.php:61
+msgid "Lost your password?"
+msgstr ""
+
+#: ../templates/login.php:65 ../templates/register.php:132
+msgid "You are logged in."
+msgstr ""
+
+#: ../templates/login.php:65 ../templates/register.php:132
+msgid "Log out"
+msgstr ""
+
+#: ../templates/register.php:68
+msgid "Registration complete. Please check your e-mail."
+msgstr ""
+
+#: ../templates/register.php:78
+msgid "Username"
+msgstr ""
+
+#: ../templates/register.php:89 ../templates/user.php:170
+msgid "First Name"
+msgstr ""
+
+#: ../templates/register.php:94 ../templates/user.php:178
+msgid "Last Name"
+msgstr ""
+
+#: ../templates/register.php:106
+msgid "Password"
+msgstr ""
+
+#: ../templates/register.php:111
+msgid "Repeat Password"
+msgstr ""
+
+#: ../templates/user.php:30
+msgid "Please log in to view this page."
+msgstr ""
+
+#: ../templates/user.php:31
+msgid "Log In"
+msgstr ""
+
+#: ../templates/user.php:152
+msgid "Profile has been updated."
+msgstr ""
+
+#: ../templates/user.php:194
+msgid "About"
+msgstr ""
+
+#: ../templates/user.php:209
+msgid "New Password"
+msgstr ""
+
+#: ../templates/user.php:217
+msgid "Repeat New Password"
+msgstr ""
+
+#: ../templates/user.php:225
+msgid "Update Profile"
+msgstr ""
+
+#: ../woocommerce/product-searchform.php:3
+msgid "Search for:"
+msgstr ""

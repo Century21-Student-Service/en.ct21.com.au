@@ -1,0 +1,56 @@
+news:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    title: VARCHAR(255) NOT NULL
+    summary: TEXT
+    content: TEXT
+    thumbnail: VARCHAR(128)
+    image: VARCHAR(128)
+    date: INT
+  form:
+    fields:
+      title:
+        widget: text
+        widget_conf:
+          required: 1
+      summary:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 0
+      content:
+        widget: textarea
+        widget_conf:
+          required: 1
+          wysiwyg: 1
+          wysiwyg_toolbar: standard
+      thumbnail:
+        widget: image
+        widget_conf:
+          required: 1
+          multiple: 0
+          upload_dir: files/news/thumbnail
+          transform:
+            dimension: 100x100
+      image:
+        widget: image
+        widget_conf:
+          required: 1
+          multiple: 0
+          upload_dir: files/news/image
+          transform:
+            dimension: 480x300
+      date:
+        widget: datepicker
+        widget_conf:
+          required: 1
+          options:
+            dateFormat: '@'
+            altFormat: 'yy-mm-dd'
+            changeMonth: true
+            changeYear: true
+            yearRange: "c-5:c+10"
+    names:
+      en: News
+      zh: News

@@ -1,0 +1,22 @@
+routing:
+
+  admin_carousel_list:
+    path: ^\/admin\/carousel\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: carousel/backend/carousel_list
+  admin_carousel_edit:
+    path: ^\/admin\/carousel\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: carousel/backend/carousel_edit
+  admin_carousel_create:
+    path: ^\/admin\/carousel\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: carousel/backend/carousel_create
+  admin_carousel_delete:
+    path: ^\/admin\/carousel\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: carousel/backend/carousel_delete

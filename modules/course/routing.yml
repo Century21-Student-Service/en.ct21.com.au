@@ -1,0 +1,22 @@
+routing:
+
+  admin_course_list:
+    path: ^\/admin\/course\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: course/backend/course_list
+  admin_course_edit:
+    path: ^\/admin\/course\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: course/backend/course_edit
+  admin_course_create:
+    path: ^\/admin\/course\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: course/backend/course_create
+  admin_course_delete:
+    path: ^\/admin\/course\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: course/backend/course_delete

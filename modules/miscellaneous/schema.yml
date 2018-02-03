@@ -1,0 +1,9 @@
+miscellaneous:
+  pk: id
+  fields:
+    id: INT NOT NULL AUTO_INCREMENT
+    key: VARCHAR(255) NOT NULL
+    value: TEXT
+    thumbnail: VARCHAR(128)
+    image: VARCHAR(128)
+    date: INT

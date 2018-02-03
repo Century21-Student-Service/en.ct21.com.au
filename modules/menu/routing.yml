@@ -1,0 +1,53 @@
+routing:
+
+  admin_menu_list:
+    path: ^\/admin\/menu\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_list
+  admin_menu_edit:
+    path: ^\/admin\/menu\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_edit
+  admin_menu_create:
+    path: ^\/admin\/menu\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_create
+  admin_menu_delete:
+    path: ^\/admin\/menu\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: menu/backend/menu_delete
+  admin_menu_order:
+    path: ^\/admin\/menu\/order\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_order
+  admin_menu_assign_country:
+    path: ^\/admin\/menu\/assign_country\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_assign_country
+
+  admin_menu_item_list:
+    path: ^\/admin\/menu_item\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_item_list
+  admin_menu_item_edit:
+    path: ^\/admin\/menu_item\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_item_edit
+  admin_menu_item_create:
+    path: ^\/admin\/menu_item\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: menu/backend/menu_item_create
+  admin_menu_item_delete:
+    path: ^\/admin\/menu_item\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: menu/backend/menu_item_delete

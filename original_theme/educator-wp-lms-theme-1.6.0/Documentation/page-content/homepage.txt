@@ -1,0 +1,111 @@
+[section_slideshow id="homepage" /]
+
+[page_section bg_color="#f5f5f5"]
+
+[dm3_one_fourth]
+
+[dm3_box_icon icon="star" style="center"]
+<h2>Great Material</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+[/dm3_box_icon]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+[dm3_box_icon icon="cogs" style="center"]
+<h2>High Quality</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+[/dm3_box_icon]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+[dm3_box_icon icon="heart" style="center"]
+<h2>Learning is Fun</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+[/dm3_box_icon]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth_last]
+
+[dm3_box_icon icon="check" style="center"]
+<h2>It’s simple</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+
+[/dm3_box_icon]
+
+[/dm3_one_fourth_last]
+
+[/page_section]
+
+[page_section]
+
+[section_title title="Latest Courses"]<a title="View all courses" href="/courses/">View all courses</a>[/section_title]
+
+[educator_courses]
+
+[/page_section]
+
+[page_section bg_color="#f5f5f5"]
+
+[section_title title="Lecturers"]Our professional and experienced lecturers will make your course wonderful. Our lecturers are practicing their field of expertise on daily basis.[/section_title]
+
+[educator_lecturers layout="grid" /]
+
+[/page_section]
+
+[page_section]
+
+[section_title title="Educator WP"]Have a look at educator WP features.[/section_title]
+
+[dm3_one_third]
+<h3>Offer Courses Online</h3>
+Offer courses online on your WordPress website. This plugin allows you to offer a number of courses to your visitors. The visitors can take a course for free or use one of the built-in payment methods to pay.
+<ul>
+	<li><a href="https://wordpress.org/plugins/ibeducator/" target="_blank">Visit Educator WP on WordPress.org »</a></li>
+	<li><a href="http://incrediblebytes.com/documents/plugins/educator-wp/" target="_blank">View Educator WP Documentation »</a></li>
+	<li><a href="http://incrediblebytes.com/document/how-educator-wp-works/" target="_blank">How Educator WP Works »</a></li>
+</ul>
+[/dm3_one_third]
+
+[dm3_two_third_last]
+
+[dm3_accordion]
+
+[dm3_collapse label="Add Quiz to Any Lesson" state="open"]Educator WP supports two types of questions: multiple choice and written answer. Quizzes can be graded automatically or manually by a lecturer.[/dm3_collapse]
+
+[dm3_collapse label="Payment Methods" state="closed"]Student can choose between 3 payment methods: PayPal, Cash and Check.[/dm3_collapse]
+
+[dm3_collapse label="Email Notifications" state="closed"]Students receive email notifications. You can configure templates of email notifications from admin panel.[/dm3_collapse]
+
+[dm3_collapse label="Roles for Lecturers and Students" state="closed"]Students and lecturers have different roles - lecturer, student. Lecturers can create courses and add grades.[/dm3_collapse]
+
+[dm3_collapse label="Course Categories" state="closed"]Categorize courses to make it easier for students to find what they need.[/dm3_collapse]
+
+[/dm3_accordion]
+
+[/dm3_two_third_last]
+
+[/page_section]
+
+[page_section bg_color="#f5f5f5"]
+
+[section_title title="Our Students"][/section_title]
+
+[dm3_testimonials autoscroll="10"]
+
+[dm3_testimonial authorname="Jinny Wise" authordescription="Web Design Student" photo="/wp-content/uploads/2014/11/student-1.jpg" authorwebsite=""]“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”[/dm3_testimonial]
+
+[dm3_testimonial authorname="James" authordescription="WordPress Student" photo="/wp-content/uploads/2014/11/student-2.jpg" authorwebsite=""]“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.”[/dm3_testimonial]
+
+[dm3_testimonial authorname="John Doe" authordescription="Web Design Business Student" photo="/wp-content/uploads/2014/11/student-3.jpg" authorwebsite="http://google.com"]“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”[/dm3_testimonial]
+
+[/dm3_testimonials]
+
+[/page_section]

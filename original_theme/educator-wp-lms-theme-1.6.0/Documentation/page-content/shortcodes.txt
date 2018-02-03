@@ -1,0 +1,232 @@
+<h3>Tabs</h3>
+[dm3_one_half]
+
+Add multiple types of tabs to posts, pages and courses. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<ul>
+	<li><strong>Horizontal</strong></li>
+	<li><strong>Vertical with left navigation</strong></li>
+	<li><strong>Vertical with right navigation</strong></li>
+</ul>
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+[dm3_tabs type="horizontal"]
+
+[dm3_tab label="Tab #1"]Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.[/dm3_tab]
+
+[dm3_tab label="Tab #2"]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/dm3_tab]
+
+[dm3_tab label="Tab #3"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/dm3_tab]
+
+[/dm3_tabs]
+
+[/dm3_one_half_last]
+
+[dm3_one_half]
+
+[dm3_tabs type="vertical_right"]
+
+[dm3_tab label="Tab #1"]Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.[/dm3_tab]
+
+[dm3_tab label="Tab #2"]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/dm3_tab]
+
+[/dm3_tabs]
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+[dm3_tabs type="vertical_left"]
+
+[dm3_tab label="Tab #1"]Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.[/dm3_tab]
+
+[dm3_tab label="Tab #2"]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/dm3_tab]
+
+[/dm3_tabs]
+
+[/dm3_one_half_last]
+
+[dm3_divider style="dotted"/]
+
+[dm3_one_half]
+<h3>Toggle</h3>
+[dm3_collapse label="Toggle box #1" state="open"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/dm3_collapse]
+
+[dm3_collapse label="Toggle box #2" state="closed"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/dm3_collapse]
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+<h3>Accordion</h3>
+[dm3_accordion]
+
+[dm3_collapse label="Option #1" state="open"]Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/dm3_collapse]
+
+[dm3_collapse label="Option #2" state="closed"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_collapse]
+
+[dm3_collapse label="Option #3" state="closed"]Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.[/dm3_collapse]
+
+[/dm3_accordion]
+
+[/dm3_one_half_last]
+
+[dm3_divider style="dotted"/]
+
+[dm3_one_half]
+
+[dm3_alert type="success"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_alert]
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+[dm3_alert type="info"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_alert]
+
+[/dm3_one_half_last]
+
+[dm3_one_half]
+
+[dm3_alert type="warning"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_alert]
+
+[/dm3_one_half]
+
+[dm3_one_half_last]
+
+[dm3_alert type="error"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_alert]
+
+[/dm3_one_half_last]
+
+[dm3_divider style="dotted"/]
+<h3>Testimonials</h3>
+[dm3_testimonials autoscroll="8"]
+
+[dm3_testimonial authorname="Jinny Wise" authordescription="Web Design Student" photo="/wp-content/uploads/2014/11/student-1.jpg" authorwebsite=""]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.[/dm3_testimonial]
+
+[dm3_testimonial authorname="Bradley Smith" authordescription="WordPress Student" photo="/wp-content/uploads/2014/11/student-2.jpg" authorwebsite=""]At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.[/dm3_testimonial]
+
+[dm3_testimonial authorname="John Doe" authordescription="Web Design Business Student" photo="/wp-content/uploads/2014/11/student-3.jpg" authorwebsite=""]Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[/dm3_testimonial]
+
+[/dm3_testimonials]
+
+[dm3_divider style="dotted"/]
+<h3>Buttons</h3>
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="default" size="small" target="_self"]Default[/dm3_button] [dm3_button url="http://google.com" color="orange" size="small" target="_self"]Orange[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="blue" size="small" target="_self"]Blue[/dm3_button] [dm3_button url="http://google.com" color="gold" size="small" target="_self"]Gold[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="light-blue" size="small" target="_self"]Light blue[/dm3_button] [dm3_button url="http://google.com" color="purple" size="small" target="_self"]Purple[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth_last]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="red" size="small" target="_self"]Red[/dm3_button]
+
+[/dm3_one_fourth_last]
+
+&nbsp;
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="default" size="medium" target="_self"]Default[/dm3_button] [dm3_button url="http://google.com" color="orange" size="medium" target="_self"]Orange[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="blue" size="medium" target="_self"]Blue[/dm3_button] [dm3_button url="http://google.com" color="gold" size="medium" target="_self"]Gold[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="light-blue" size="medium" target="_self"]Light blue[/dm3_button] [dm3_button url="http://google.com" color="purple" size="medium" target="_self"]Purple[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth_last]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="red" size="medium" target="_self"]Red[/dm3_button]
+
+[/dm3_one_fourth_last]
+
+&nbsp;
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="default" size="large" target="_self"]Default[/dm3_button] [dm3_button url="http://google.com" color="orange" size="large" target="_self"]Orange[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="blue" size="large" target="_self"]Blue[/dm3_button] [dm3_button url="http://google.com" color="gold" size="large" target="_self"]Gold[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="light-blue" size="large" target="_self"]Light blue[/dm3_button] [dm3_button url="http://google.com" color="purple" size="large" target="_self"]Purple[/dm3_button]
+
+[/dm3_one_fourth]
+
+[dm3_one_fourth_last]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+[dm3_button url="http://google.com" color="red" size="large" target="_self"]Red[/dm3_button]
+
+[/dm3_one_fourth_last]
+
+[dm3_divider style="dotted"/]
+<h3>Icons</h3>
+[dm3_one_third]
+
+[dm3_box_icon icon="plug" style="left"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_box_icon]
+
+[/dm3_one_third]
+
+[dm3_one_third]
+
+[dm3_box_icon icon="database" style="left"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_box_icon]
+
+[/dm3_one_third]
+
+[dm3_one_third_last]
+
+[dm3_box_icon icon="cog" style="left"]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[/dm3_box_icon]
+
+[/dm3_one_third_last]

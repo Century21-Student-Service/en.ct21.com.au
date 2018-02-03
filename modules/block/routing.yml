@@ -1,0 +1,22 @@
+routing:
+
+  admin_block_list:
+    path: ^\/admin\/block\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: block/backend/block_list
+  admin_block_edit:
+    path: ^\/admin\/block\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: block/backend/block_edit
+  admin_block_create:
+    path: ^\/admin\/block\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: block/backend/block_create
+  admin_block_delete:
+    path: ^\/admin\/block\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: block/backend/block_delete

@@ -1,0 +1,22 @@
+routing:
+
+  admin_news_list:
+    path: ^\/admin\/news\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: news/backend/news_list
+  admin_news_edit:
+    path: ^\/admin\/news\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: news/backend/news_edit
+  admin_news_create:
+    path: ^\/admin\/news\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: news/backend/news_create
+  admin_news_delete:
+    path: ^\/admin\/news\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: news/backend/news_delete

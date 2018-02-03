@@ -1,0 +1,22 @@
+routing:
+
+  admin_application_list:
+    path: ^\/admin\/application\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: application/backend/application_list
+  admin_application_edit:
+    path: ^\/admin\/application\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: application/backend/application_edit
+  admin_application_create:
+    path: ^\/admin\/application\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: application/backend/application_create
+  admin_application_delete:
+    path: ^\/admin\/application\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: application/backend/application_delete

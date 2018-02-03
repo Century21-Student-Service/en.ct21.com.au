@@ -1,0 +1,676 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Educator WP Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Educator WP&rdquo; Documentation</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Educator WP&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 17/11/2014<br>
+					By: IncredibleBytes<br>
+					Email: <a href="mailto:contact@incrediblebytes.com">contact@incrediblebytes.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/incrediblebytes">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#theme-settings">Theme Settings</a></li>
+			<li><a href="#customization">Customization (Child Theme)</a></li>
+			<li><a href="#theme-setup">Theme Setup</a></li>
+      <li><a href="#import">How to import data from theme demonstration website</a></li>
+      <li><a href="#theme-updates">Theme Updates</a></li>
+      <li><a href="#ib-retina">Retina Support</a></li>
+      <li><a href="#font-settings">Font Settings</a></li>
+			<li><a href="#setup-homepage">Setup Homepage</a></li>
+			<li><a href="#slideshow">Adding Slideshow</a></li>
+			<li><a href="#contact-form">Contact Form 7</a></li>
+			<li><a href="#educator-wp">Educator Plugin (LMS)</a></li>
+			<li><a href="#page-sections">Adding Page Sections (e.g. Homepage)</a></li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+      <li><a href="#setup-pages">Setup Log in, Register and User Profile Pages</a></li>
+			<li><a href="#psd-mockup">PSD Mockup</a></li>
+      <li><a href="#page-content">Page Content</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<h3>Install WordPress</h3>
+
+		<p>
+      To find information about installing WordPress, please visit <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">http://codex.wordpress.org/Installing_WordPress</a>
+    </p>
+
+    <h3>Required Plugins</h3>
+
+    <p>The theme requires a number of plugins to provide some of the features:</p>
+
+    <ul>
+    	<li><a href="https://wordpress.org/plugins/ibeducator/" target="_blank">Educator</a> <strong>(required)</strong></li>
+    	<li>Dm3Shortcodes - bundled<strong>*</strong> <strong>(required)</strong></li>
+    	<li>IB Slideshow - bundled<strong>*</strong> <strong>(required)</strong></li>
+    	<li>Educator Theme Features - bundled<strong>*</strong> <strong>(required)</strong></li>
+      <li>IB Retina - bundled<strong>*</strong> <strong>(optional)</strong></li>
+      <li>Envato WordPress Toolkit - bundled<strong>*</strong> <strong>(optional)</strong></li>
+    	<li><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> <i>(optional)</i></li>
+      <li><a href="https://wordpress.org/plugins/woosidebars/" target="_blank">WooSidebars</a> <i>(optional)</i></li>
+    </ul>
+
+    <p><strong>*</strong> Bundled plugins are included inside the theme as ZIP packages (in wp-content/themes/ib-educator/plugins folder) and are managed by TGM Plugin Activation Class.</p>
+
+    <h3>Install the Parent Theme</h3>
+
+    <p>
+      Upon downloading the zip package from themeforest.net extract it and find the file named "ib-educator.zip" and follow the steps:
+    </p>
+    
+    <h5>Install through WordPress admin panel:</h5>
+
+    <ol>
+      <li>Login to your Wordpress admin and go to Appearance &raquo; Themes, Install Themes, Upload.</li>
+      <li>Choose "ib-educator.zip" file and click "Install Now".</li>
+      <li>Click "Activate".</li>
+    </ol>
+
+    <h5>Install through FTP:</h5>
+
+    <ol>
+      <li>Log in to your FTP service.</li>
+      <li>Unzip the "ib-educator.zip" and you should get ib-educator folder.</li>
+      <li>Copy the extracted ib-educator folder to wp-content/themes.</li>
+      <li>Go to Appearance &raquo; Themes and activate the theme.</li>
+    </ol>
+
+    <h3>IMPORTANT: Install &amp; Activate a Child Theme</h3>
+
+    <p>It's important to note that if you would like to customize the theme code it's important that you do it through the child theme. As the parent theme will be updated periodically to introduce new features, improvements and bug fixes. The ib-educator theme files will need to be overwritten with each update. Therefore, the child theme helps you to preserve your customizations.</p>
+
+    <p>Please check this section to learn more about child themes: <a href="#customization"><strong>C) Customization (Child Theme)</strong></a></p>
+
+    <h3>What's Next?</h3>
+
+    <p>Please check the following sections:</p>
+
+    <ol>
+      <li><a href="#import">E) How to import data from theme demonstration website</a></li>
+      <li><a href="#theme-setup">D) Theme Setup</a></li>
+      <li><a href="#theme-updates">F) Theme Updates</a></li>
+    </ol>
+
+		<hr>
+
+		<h3 id="theme-settings"><strong>B) Theme Settings</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+			This theme uses WordPress Customizer API to provide the settings. Please find the theme settings in Admin Panel &raquo; Appearance &raquo; Customize.
+		</p>
+
+		<hr>
+		
+		<h3 id="customization"><strong>C) Customization (Child Theme)</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+      Lets say, you need to modify the theme files, e.g. header.php. I strongly advise you to use a child theme to do this.
+      This allows you to easily update the original theme when updates come out. All your code modifications will go to the directory of the child theme.
+    </p>
+
+    <p>
+      The best explanation of using the child theme is in the Wordpress.org documentation - <a href="http://codex.wordpress.org/Child_Themes">Child Themes</a>.
+    </p>
+
+    <p>
+      I have created a child theme starter. You can find it in the folder "Child Theme", inside the package.
+    </p>
+
+    <p>
+      To install the child theme you need to:
+    </p>
+
+    <ol>
+      <li>Copy "ib-educator-child" folder from the theme package to "wp-content/themes".</li>
+      <li>Activate this child theme in Wordpress Admin &raquo; Appearance.</li>
+      <li>Then you can modify the ib-educator-child/style.css to override the parent theme's styles. Copy the template files that you want override to the child theme directory. Functions can be overriden in ib-educator-child/functions.php.</li>
+    </ol>
+		
+		<hr>
+
+		<h3 id="theme-setup"><strong>D) Theme Setup</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+          After the <a href="#installation">theme installation</a> you need to configure a couple of things:
+        </p>
+
+        <h3>1) Install Required Plugins</h3>
+
+        <p>
+        	Please check the <a href="#installation">theme installation</a> section to make sure that you installed all required plugins.
+        </p>
+
+       	<h3>2) Create Menus</h3>
+
+       	<p>
+       		Go to Appearance &raquo; Menus and create 3 menus:<br>
+       		- Main menu<br>
+       		- Logged in user menu<br>
+       		- Footer menu<br>
+       		Please check the appropriate checkbox in the "Theme locations" section for each menu.
+       	</p>
+
+       	<h3>3) Add Widgets</h3>
+
+       	<p>
+       		Go to Appearance &raquo; Widgets and add widgets to various widget areas.<br>
+       		If you've installed the WooSidebars plugin, you can add your own widget areas to posts and pages in Appearance &raquo; Widget Areas.
+       	</p>
+
+       	<h3>4) Fill in Theme Settings</h3>
+
+       	<p>
+       		Go to Appearance &raquo; Customize and add your settings. The theme adds the following settings sections to Customizer:<br>
+       		General<br>
+       		Footer Settings<br>
+       		Toolbar Settings<br>
+       		Share Settings<br>
+       		Page Layouts<br>
+       		Log in/register<br>
+       		Colors<br>
+       		<strong>Please have a look at other settings sections too.</strong>
+       	</p>
+
+       	<h3>5) Image sizes</h3>
+
+       	<p>
+       		The maximum width for the page content in this theme is 1140px. So you might want to set the WordPress "large" image size to 1140px by 1140px.
+       		To do this please go to Settings &raquo; Media and find the "Large size" in "Image Sizes" settings sections.
+       	</p>
+
+       	<h3>6) Configure IB Retina Plugin</h3>
+
+       	<p>Please follow the instructions from <a href="#ib-retina">here</a></p>
+
+       	<h3>7) Setup Homepage</h3>
+
+       	<p>Please follow the instructions from <a href="#setup-homepage">here</a></p>
+
+        <h3>8) You might want to setup font settings</h3>
+
+        <p>Please follow the instructions from <a href="#font-settings">here</a></p>
+
+        <h3>9) Configure Educator WP Plugin</h3>
+
+        <p>Please follow the instructions from <a href="#educator-wp">here</a></p>
+		
+		<hr>
+
+    <h3 id="import"><strong>E) How to import data from theme demonstration website</strong> - <a href="#toc">top</a></h3>
+
+    <p>
+      To import data (posts, courses, etc) from theme demonstration website, you need to:
+    </p>
+
+    <ol>
+      <li>Make sure you have a clean WordPress installation.</li>
+      <li>Install the theme (better to install using child theme).</li>
+      <li>Install and <strong>activate</strong> all required plugins.</li>
+      <li>Go to Settings &raquo; Media and set "Large size" image size to max width 1140px and max height 1140px.</li>
+      <li>Go to Tools &raquo; Import &raquo; WordPress (you may be prompted to install WordPress Importer plugin; you need to install it)</li>
+      <li>On the import page, choose the "demo-website-export.xml" file from the theme package (the one you downloaded from themeforest).</li>
+      <li>Upload the file and import the data</li>
+      <li>When you're done with the import, go to Users &raquo; All Users, select the imported users (the users who you want to become lecturers, except the admin) and set their roles to Lecturer.</li>
+      <li>Some data didn't go to export file, so you will need to add this data (e.g. lecturers' photos, lecturers' descriptions, widgets, etc).</li>
+      <li>Read through the <a href="#theme-setup">Theme Setup</a> section.</li>
+    </ol>
+
+    <hr>
+
+    <h3 id="theme-updates"><strong>F) Theme Updates</strong> - <a href="#toc">top</a></h3>
+    
+    <p>
+      The theme updates will be released from time to time. These updates may introduce the following:
+    </p>
+
+    <ul>
+      <li>Critical Bug Fixes</li>
+      <li>New Features</li>
+      <li>Improvements of the Theme and Bundled Plugins</li>
+    </ul>
+
+    <p>
+      <strong>It is very important to keep the theme up to date.</strong>
+    </p>
+
+    <h3>Update Notifications</h3>
+
+    <p>The theme will periodically check http://incrediblebytes.com for updates. If there is an update available, it will display an admin notice. To enable update notice, please make sure that "Theme Updates Notifications" checkbox is checked in Appearance &raquo; Customize, General section:</p>
+
+    <p><img src="assets/images/theme-updates-1.jpg" alt=""></p>
+
+    <h3>How to Update</h3>
+
+    <p>
+      You can use the Envato WordPress Toolkit plugin to install theme updates:<br>
+      <a href="https://github.com/envato/envato-wordpress-toolkit">Envato WordPress Toolkit</a>
+    </p>
+
+    <p>Envato WordPress Toolkit plugin is also included with the theme. The TGM Plugin Activation Class will ask you to install it. It checks for availability of the plugins that are used by this theme.</p>
+    
+    <hr>
+
+    <h3 id="ib-retina"><strong>G) Retina Support</strong> - <a href="#toc">top</a></h3>
+
+    <p>
+      In order to load the larger versions (2x) of the images for devices with retina (high pixel density) screens you can enable the IB Retina plugin.
+      Once enabled, please go to <strong>Media &raquo; IB Retina</strong> and select those image sizes that you would like to generate 2x versions for.
+    </p>
+
+    <p>
+      <img src="assets/images/theme-setup-1.jpg">
+    </p>
+
+    <p>
+      When IB Retina plugin is enabled, it will automatically create a 2x version for each image you upload, specifically for each image size.
+    </p>
+
+    <p>
+      If you enabled the IB Retina plugin after you uploaded your first images, you will need to use the famous "Regenerate Thumbnails" plugin to regenerate image sizes for the images.
+    </p>
+
+    <p>
+      <img src="assets/images/theme-setup-2.jpg">
+      <img src="assets/images/theme-setup-3.jpg">
+    </p>
+
+    <p>
+      To delete the 2x versions of the images please go to <strong>Media &raquo; Library</strong>, select the images and use "Bulk Actions" select box option "Delete 2x Images":
+    </p>
+
+    <p>
+      <img src="assets/images/theme-setup-4.jpg">
+    </p>
+
+    <hr>
+
+    <h3 id="font-settings"><strong>H) Font Settings</strong> - <a href="#toc">top</a></h3>
+
+    <p>
+      The theme uses <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a>.
+      You can configure fonts on Appearance &raquo; Customize &raquo; Font Settings:<br>
+      <img src="assets/images/fonts-1.jpg">
+    </p>
+
+    <h3>Character Sets</h3>
+
+    <p>Some fonts support multiple character sets (subsets). In order to specify which sets should the browser download, you can enter the sets names into the "Character Sets" text input (separate the sets by comma (e.g. latin,latin-ext)).</p>
+
+    <p>To find out which subsets are supported by chosen fonts, please search for this font in <a href="http://www.google.com/fonts" target="_blank">google.com/fonts</a> and click "Quick-use" button. Available character sets should be listed in "Choose the character sets you want" section. You need to use the short names (example: for "Latin Extended (latin-ext)", use latin-ext).</p>
+
+    <p>All character sets available on Google Fonts (each set is pecific to a particular font):</p>
+
+    <ul>
+      <li>cyrillic</li>
+      <li>cyrillic-ext</li>
+      <li>devanagari</li>
+      <li>greek</li>
+      <li>greek-ext</li>
+      <li>khmer</li>
+      <li>latin</li>
+      <li>latin-ext</li>
+      <li>vietnamese</li>
+    </ul>
+
+    <h3>Font Size</h3>
+
+    <p>Due to the differences in base sizes for different fonts, the theme offers a font-size setting. When you change the font, you can play with "Font Size" setting to make the font look better.</p>
+
+    <h3>Font Weight Settings</h3>
+
+    <p>Font weight settings are offered, because different fonts provide different combination of font weights. Please have a look at the list of font weights that exist for the available fonts:</p>
+
+    <ul>
+      <li>Open Sans - 400, 600, 700</li>
+      <li>PT Sans - 400, 700</li>
+      <li>Roboto - 300, 400, 700</li>
+      <li>Noto Sans - 400, 700</li>
+      <li>Oxygen - 300, 400, 700</li>
+    </ul>
+
+    <h3>Adding Another Google Font</h3>
+
+    <p>To add another Google font to the options panel, you need to add a piece of code to the functions.php in your child theme:</p>
+
+    <pre>function add_my_chosen_font( $fonts ) {
+  $fonts['Open Sans'] = array(
+    'font_styles' => '400,600,700,400italic,600italic,700italic', // the "family" parameter of the chosen google font URL
+  );
+
+  return $fonts;
+}
+add_filter( 'ib_theme_get_fonts', 'add_my_chosen_font' );</pre>
+
+    <hr>
+
+		<h3 id="setup-homepage"><strong>I) Setup Homepage</strong> - <a href="#toc">top</a></h3>
+		
+		<h5>Create the Page</h5>
+
+		<ol>
+          <li>Go to Pages &raquo; Add New.</li>
+          <li>Name this page "Front page" (you can use any other name).</li>
+          <li>Enter page content and save it. You will need to use a few shortcodes to reproduce the demo.</li>
+        </ol>
+
+        <h5>Homepage Content</h5>
+
+        <p>Please go to <a href="#page-content">Page Content</a> section to get the page content (text, shortcodes).</p>
+
+
+        <h5>Edit WordPress Settings</h5>
+
+        <ol>
+          <li>Go to Settings &raquo; Reading</li>
+          <li>Set "Front page displays" option to "A static page"</li>
+          <li>Set "Front page" option to "Front page" (Depending on how you named your page)</li>
+          <li>Click "Save Changes"</li>
+        </ol>
+
+        <p>
+        	<img src="assets/images/homepage-1.jpg">
+        </p>
+		
+		<hr>
+
+		<h3 id="slideshow"><strong>J) Add Slideshow</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Please go to Slideshows &raquo; Add New</p>
+
+		<p><img src="assets/images/slideshow-1.jpg"></p>
+
+		<p>Please use the following shortcode for the homepage slideshow:</p>
+
+<pre>
+[section_slideshow id="slideshow-slug"]
+</pre>
+
+    <p>The "id" attribute is the slug of the slideshow:</p>
+
+    <p><img width="860" src="assets/images/slideshow-4.jpg"></p>
+
+		<p>You can also use a shortcode to embed this slideshow into posts and pages:</p>
+
+		<p><img src="assets/images/slideshow-3.jpg"></p>
+		
+		<hr>
+
+		<h3 id="contact-form"><strong>K) Contact Form 7</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme adds additional styles for Contact Form 7 plugin. You need to install this plugin to be able to create contact forms.</p>
+
+		<p>To add a form you need to go to Contact &raquo; Add New. Then paste the new form shortcode to a contact page.</p>
+
+		<h5>Form Code That is Used by the Theme Demo</h5>
+
+		<p>theme_package_from_themeforest/Documentation/contact-form/contact-form.txt</p>
+
+		<p><strong>Please find latest documentation for this plugin on its website:</strong></p>
+
+		<ul>
+			<li><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank">Plugin Page on WordPress.org</a></li>
+			<li><a href="http://contactform7.com/" target="_blank">Plugin Website</a></li>
+			<li><a href="http://contactform7.com/getting-started-with-contact-form-7/" target="_blank">Getting Started</a></li>
+		</ul>
+		
+		<hr>
+
+		<h3 id="educator-wp"><strong>L) Educator Plugin (LMS)</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The online courses functionality is provided by the Educator plugin. Please install this plugin to be able to setup online courses.</p>
+
+		<h5>The Documentation:</h5>
+
+		<p>
+			The best location to view this plugin documentation is it's <a href="http://educatorplugin.com/category/documentation/user-guide/" target="_blank">website</a>.
+			As plugin might be updated periodically to introduce new features, bug fixes and improvements.
+		</p>
+
+		<ul>
+			<li><a href="https://wordpress.org/plugins/ibeducator/" target="_blank">Plugin Page on WordPress.org</a></li>
+			<li>
+        <a href="http://educatorplugin.com/category/documentation/user-guide/" target="_blank">Educator WP Documentation</a>
+        <ol>
+          <li><a href="http://educatorplugin.com/configuring-educator/">Configuring Educator Plugin</a></li>
+          <li><a href="http://educatorplugin.com/setup-the-required-pages/">Setup the Required Pages</a></li>
+        </ol>
+      </li>
+		</ul>
+
+		<p><img src="assets/images/educator-1.jpg"></p>
+		
+		<hr>
+
+		<h3 id="page-sections"><strong>M) Adding Page Sections (e.g. Homepage)</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To add multiple page sections with custom background:</p>
+
+		<ol>
+			<li>Go to Pages &raquo; Add New.</li>
+			<li>
+				<p>Select "Sections" in the "Page Attributes" meta box.</p>
+				<p><img src="assets/images/sections-1.jpg"></p>
+			</li>
+			<li>
+				<p>Use the following shortcode for each section:</p>
+
+				<p><textarea disabled="disabled">[page_section bg_color="#f5f5f5"]
+
+[section_title title="Section Title"]Section Subtitle[/section_title]
+
+Section content: text, image, etc.
+
+[/page_section]
+
+[page_section bg_color="transparent"]
+
+[section_title title="Section 2 Title"]Section 2 Subtitle[/section_title]
+
+Section 2 content: text, image, etc.
+
+[/page_section]</textarea></p>
+
+				<p><img src="assets/images/sections-2.jpg"></p>
+			</li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="shortcodes"><strong>N) Shortcodes</strong> - <a href="#toc">top</a></h3>
+		
+		<h3>Dm3Shortcodes plugin:</h3>
+
+		<p>A number of basic shortcodes is provided by Dm3Shortcodes plugin:</p>
+
+		<p><img src="assets/images/shortcodes-1.jpg"></p>
+
+		<h3>Educator Theme Features plugin:</h3>
+
+		<p>Shortcodes provided by Educator Theme Features plugin:</p>
+
+		<h5>Page Section</h5>
+
+		<pre>[page_section bg_color="#f5f5f5"]
+Content: text, image, etc.
+[/page_section]</pre>
+
+		<h5>Page Section Title</h5>
+
+		<pre>[section_title title="Section Title"]Section Subtitle[/section_title]</pre>
+
+		<h5>Latest Courses Carousel</h5>
+
+		<pre>[educator_courses show_price="1" ids="1 2 3" /]</pre>
+
+    <p>
+      <strong>ids</strong>: The list of IDs of the courses you'd like to display separated by spaces.<br>
+      <strong>show_price</strong>: 1 - display price, 0 - hide price.
+    </p>
+
+		<h5>Lecturers Block</h5>
+
+		<pre>[educator_lecturers ids="1 2 3" /]</pre>
+
+    <p>
+      <strong>ids</strong>: The list of IDs of the WordPress users separated by spaces.
+    </p>
+
+		<h5>Slideshow Section</h5>
+
+		<pre>[section_slideshow id="slideshow-slug"]</pre>
+
+    <p>
+      <strong>id</strong>: slideshow slug.
+    </p>
+
+		<p><img src="assets/images/shortcodes-2.jpg"></p>
+
+    <h3>Other Shortcodes</h3>
+
+    <h5>Memberships shortcode</h5>
+
+    <pre>[memberships_page layout="2 columns"]</pre>
+
+    <p>
+      <strong>layout</strong>: 2 columns, 3 columns, or list.<br>
+    </p>
+		
+		<hr>
+
+    <h3 id="setup-pages"><strong>O) Setup Log in, Register and User Profile Pages</strong> - <a href="#toc">top</a></h3>
+
+    <p>The theme has a couple of templates that embed log in and register pages into front end. These pages use the original WordPress features for ensure security.</p>
+
+    <p><strong>Log In Page:</strong> Go to Pages &raquo; Add New and set the template to "Log In Page".</p>
+
+    <p><strong>Register Page:</strong> Go to Pages &raquo; Add New and set the template to "Register Page".</p>
+
+    <p><strong>User Page:</strong> Go to Pages &raquo; Add New and set the template to "User Page".</p>
+
+    <p>Now, go to <strong>Appearance &raquo; Customize &raquo; Log in/register</strong> and choose appropriate page for each setting.</p>
+
+    <h3>Since version 1.2.0:</h3>
+
+    <h5>1. Setup the user pages.</h5>
+
+    <p>
+      Please go to Educator &raquo; Settings and make sure that the following pages are set up:
+    </p>
+
+    <ul>
+      <li>Student's Courses</li>
+      <li>Payment</li>
+      <li>Memberships</li>
+      <li>User's Membership</li>
+      <li>User's Payments</li>
+    </ul>
+
+    <p>
+      Please edit the following pages and set the "Template" option for each of these pages to "User page":
+    </p>
+
+    <ul>
+      <li>Student's Courses</li>
+      <li>User's Membership</li>
+      <li>User's Payments</li>
+    </ul>
+
+    <h5>2. Reorder the tabs on the user pages.</h5>
+
+    <p>
+      Please edit the following pages and set the "Order" option of each of these pages to an appropriate value.
+    </p>
+
+    <ul>
+      <li>Profile ("Profile" in Appearance &raquo; Customize &raquo; Log in/register)</li>
+      <li>Student's Courses</li>
+      <li>User's Membership</li>
+      <li>User's Payments</li>
+    </ul>
+    
+    <hr>
+
+		<h3 id="psd-mockup"><strong>P) PSD Mockup</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Please find the PSD file in the theme package.</p>
+		
+		<hr>
+
+    <h3 id="page-content"><strong>Q) Page Content</strong> - <a href="#toc">top</a></h3>
+
+    <p>
+      I've created snippets of page content for the pages from the demo website. Please find them in "documentation/page-content" folder in the theme package (the one you downloaded from themeforest).
+    </p>
+
+    <p>
+      <strong>Important.</strong> Before copying the contents to the editor, click on the "Text" tab in the upper right corner of the post editor. When done, you can switch back to "Visual".
+    </p>
+
+    <hr>
+		
+		<h3 id="credits"><strong>R) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+		<p>
+			<strong>Images that are displayed on the theme demo are not included in the theme package. Please do not attempt to copy the images from the theme demo website. You must purchase licenses for those images. Most of the images on theme demo website are purchased from <a href="http://photodune.com">photodune.com</a></strong>
+		</p>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Font Awesome from <a href="http://twitter.com/davegandy">Dave Gandy</a> (<a href="http://fortawesome.github.io/Font-Awesome/">Link</a>)</li>
+			<li>Flexslider from <a href="http://www.woothemes.com/">WooThemes</a></li>
+			<li>Magnific Popup from Dmitry Semenov (<a href="http://dimsemenov.com/plugins/magnific-popup/">Link</a>)</li>
+			<li>OwlCarousel from Bartosz Wojciechowski (<a href="http://www.owlgraphic.com/owlcarousel/">Link</a>)</li>
+			<li>jQuery Validation Plugin from Jörn Zaefferer (<a href="http://jqueryvalidation.org/">Link</a>)</li>
+			<li>Modernizr from <a href="http://modernizr.com/">modernizr.com</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>IncredibleBytes</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
