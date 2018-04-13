@@ -75,7 +75,7 @@
 <div class='form-group'>
   <label class='col-sm-2 control-label' for='weight'>weight </label>
   <div class='col-sm-10'>
-    <input value='<?php echo htmlentities(str_replace('\'', '"', ($object->isNew() ? (isset($_POST['weight']) ? strip_tags($_POST['weight']) : '') : $object->getWeight()))) ?>' type='text' class='form-control' id='weight' name='weight' />
+    <input value='<?php echo htmlentities(str_replace('\'', '"', ($object->isNew() ? (isset($_POST['weight']) ? strip_tags($_POST['weight']) : '0') : $object->getWeight()))) ?>' type='text' class='form-control' id='weight' name='weight' />
   </div>
 </div>
 <div class='hr-line-dashed'></div>
