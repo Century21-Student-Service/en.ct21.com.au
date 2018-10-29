@@ -1,13 +1,18 @@
 <?php
 header("content-type:application/json;charset=utf-8");
 
+
+error_reporting(E_ALL & ~E_NOTICE);
+
+session_start();
+
 //---------------邮件发送-------beg--------
 date_default_timezone_set('Etc/UTC');
-//require 'modules/mail/includes/libraries/PHPMailerAutoload.php';
-//require 'modules/mail/includes/libraries/fun.php';
+//require 'modules/mail/includes/libraries/PHPMailer/PHPMailerAutoload.php';
+//require 'modules/mail/includes/libraries/PHPMailer/fun.php';
 
-require 'modules/mail/includes/libraries/2_php_mail/web/PHPMailerAutoload.php';
-require 'modules/mail/includes/libraries/2_php_mail/web/fun.php';
+require 'PHPMailer/PHPMailerAutoload.php';
+require 'PHPMailer/fun.php';
 
 //---------------邮件发送-------end--------
 
@@ -17,9 +22,6 @@ require 'modules/mail/includes/libraries/2_php_mail/web/fun.php';
 
 
 
-error_reporting(E_ALL & ~E_NOTICE);
-
-session_start();
 
 //$act=$_POST["act"];
 $act=!empty($_REQUEST["act"])?$_REQUEST["act"]:"";

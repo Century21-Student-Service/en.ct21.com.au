@@ -1,7 +1,20 @@
 <?php
 /** handle submission **/
+
+
+
+
+
 // handle form submission
 if (isset($_POST['submit'])) {
+	
+//--------------mail about---------------------
+require '../PHPMailer2/PHPMailerAutoload.php';
+require '../PHPMailer2/fun.php';
+require 'fun_mail.php';
+//---------------------------------------------
+	
+	
   $error_flag = false;
   $object = new Application();
   /// validation
@@ -31,6 +44,35 @@ if (isset($_POST['submit'])) {
   if (empty($mobile)) {
     Message::register(new Message(Message::DANGER, i18n(array("en" => "mobile is required.", "zh" => "请填写mobile"))));
     $error_flag = true;
+  }
+  else
+  {
+	  
+		//--------------mail about---------------------
+		$sTitle="-------[$mobile]----------";
+		$sContent="-------[$mobile]----------";
+		$isend=iSendMailEx($sTitle,$sContent);
+	
+		if($isend==true)
+		{
+			//$data='{"tishi":"1","pass":"mypass"}';
+			$data='{"tishi":"1","pass":"'.$pass.'"}';
+			
+			
+			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send succeed.", "zh" => "邮件发送成功"))));
+			$error_flag = true;
+		}
+		else
+		{
+			$data='{"tishi":"0","pass":"null"}';
+			
+			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send fail.", "zh" => "邮件发送失败"))));
+			$error_flag = true;
+		}
+		//---------------------------------------------
+		/**/
+
+		
   }
   
   // validation for $qq
