@@ -23,8 +23,8 @@ require '../../mail/includes/libraries/PHPMailer2/fun.php';
 require 'fun_mail.php';
 */
 
-require '../PHPMailer2/PHPMailerAutoload.php';
-require '../PHPMailer2/fun.php';
+require dirname(__FILE__).'../PHPMailer2/PHPMailerAutoload.php';
+require dirname(__FILE__).'../PHPMailer2/fun.php';
 // require '../../mail/includes/libraries/PHPMailer2/fun_mail.php';
 require 'fun_mail.php';
 

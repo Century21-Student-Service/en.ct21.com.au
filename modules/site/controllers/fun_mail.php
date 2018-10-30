@@ -99,7 +99,8 @@ function iSendMail($sendFrom,$myPass,$sendTo,$fromName,$toName,$mysubject,$mycon
 	$mail->Subject = $mysubject;
 	//Read an HTML message body from an external file, convert referenced images to embedded,
 	//convert HTML into a basic plain-text alternative body
-	$mail->msgHTML(file_get_contents('../PHPMailer2/contents.html'), dirname(__FILE__));
+	//$mail->msgHTML(file_get_contents(dirname(__FILE__).'/../PHPMailer2/contents.html'), dirname(__FILE__));
+	$mail->msgHTML(file_get_contents(dirname(__FILE__).'/../PHPMailer2/contents.html'), dirname(__FILE__).'/../PHPMailer2');
 	//Replace the plain text body with one created manually
 	$mail->AltBody = $mycontent;
 	//Attach an image file

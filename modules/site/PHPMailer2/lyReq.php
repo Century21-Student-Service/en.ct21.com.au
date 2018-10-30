@@ -9,14 +9,24 @@ session_start();
 //---------------邮件发送-------beg--------
 date_default_timezone_set('Etc/UTC');
 
+/*
+require '../PHPMailer2/PHPMailerAutoload.php';
+require '../PHPMailer2/fun.php';
+//require '../PHPMailer2/fun_mail.php';
+require 'fun_mail.php';
+*/
 
-// require '../PHPMailer2/PHPMailerAutoload.php';
-// require '../PHPMailer2/fun.php';
-// require '../PHPMailer2/fun_mail.php';
-
+/*
 require '../../mail/includes/libraries/PHPMailer2/PHPMailerAutoload.php';
 require '../../mail/includes/libraries/PHPMailer2/fun.php';
-require '../../mail/includes/libraries/PHPMailer2/fun_mail.php';
+// require '../../mail/includes/libraries/PHPMailer2/fun_mail.php';
+require 'fun_mail.php';
+*/
+
+require dirname(__FILE__).'../PHPMailer2/PHPMailerAutoload.php';
+require dirname(__FILE__).'../PHPMailer2/fun.php';
+// require '../../mail/includes/libraries/PHPMailer2/fun_mail.php';
+require 'fun_mail.php';
 
 //---------------邮件发送-------end--------
 
@@ -71,8 +81,8 @@ if(!empty($act))
 		$money=!empty($money)?$money:"";
 		$bank=!empty($bank)?$bank:"";
 		$bankid=!empty($bankid)?$bankid:"";
-		
-		$pass="mypass222";
+		//mypass111
+		$pass="mypass999";
 		
 		$sTitle="您的注册帐号信息";		
 		$sContent="帐号:$uid\r\n";

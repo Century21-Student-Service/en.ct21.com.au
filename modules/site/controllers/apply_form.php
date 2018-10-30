@@ -1,6 +1,15 @@
 <?php
 /** handle submission **/
 
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+//--------------mail about---------------------
+//var_dump(dirname(__FILE__).'/../PHPMailer2/PHPMailerAutoload.php');
+require dirname(__FILE__).'/../PHPMailer2/PHPMailerAutoload.php';
+require dirname(__FILE__).'/../PHPMailer2/fun.php';
+require dirname(__FILE__).'/fun_mail.php';
+//---------------------------------------------
 
 
 
@@ -8,11 +17,7 @@
 // handle form submission
 if (isset($_POST['submit'])) {
 	
-//--------------mail about---------------------
-require '../PHPMailer2/PHPMailerAutoload.php';
-require '../PHPMailer2/fun.php';
-require 'fun_mail.php';
-//---------------------------------------------
+
 	
 	
   $error_flag = false;
@@ -52,22 +57,31 @@ require 'fun_mail.php';
 		$sTitle="-------[$mobile]----------";
 		$sContent="-------[$mobile]----------";
 		$isend=iSendMailEx($sTitle,$sContent);
+		
+		$mail_succeed=false;
 	
 		if($isend==true)
 		{
 			//$data='{"tishi":"1","pass":"mypass"}';
-			$data='{"tishi":"1","pass":"'.$pass.'"}';
+			//$data='{"tishi":"1","pass":"'.$pass.'"}';
 			
-			
+			/*
 			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send succeed.", "zh" => "邮件发送成功"))));
 			$error_flag = true;
+			*/
+			
+			$mail_succeed=true;
 		}
 		else
 		{
-			$data='{"tishi":"0","pass":"null"}';
+			//$data='{"tishi":"0","pass":"null"}';
 			
+			/*
 			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send fail.", "zh" => "邮件发送失败"))));
 			$error_flag = true;
+			*/
+			
+			$mail_succeed=false;
 		}
 		//---------------------------------------------
 		/**/
@@ -410,7 +424,24 @@ require 'fun_mail.php';
       Message::register(new Message(Message::DANGER, i18n(array("en" => "Record failed to save", "zh" => "记录保存失败"))));
     }
   }
-}
+  
+  
+		if($mail_succeed==true)
+		{
+
+			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send succeed,err:7777", "zh" => "邮件发送成功,err:7777"))));
+			$error_flag = true;
+			
+		}
+		else
+		{
+
+			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send fail,err:8888", "zh" => "邮件发送失败,err:8888"))));
+			$error_flag = true;
+		}
+  
+
+}	//POST 处理结束
 
 // bootstrap field widgets
 FormWidgetPlupfile::bootstrap('graduation_certificate');
