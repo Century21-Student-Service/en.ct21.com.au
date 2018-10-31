@@ -15,8 +15,9 @@ $html->renderOut('site/components/header');
 $html->renderOut('site/404', array(
     'full_page_sidebar_right' => $html->render('site/components/full_page_sidebar_right', array(
       'blocks' => array(
-          Block::findByName('Get in Touch'),
-          Block::findByName('Apply Now')
+          Block::findByName('Get in Touch')
+		  /*,
+          Block::findByName('Apply Now')*/
         )
     ))
 ));

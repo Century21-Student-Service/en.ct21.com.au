@@ -5,8 +5,20 @@
 
 function iSendMailEx($mysubject,$mycontent)
 {
-	$isend=iSendMail("q838149211@sina.com","110110520","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
 	
+	
+	//$isend=iSendMail("daju1984@126.com","daju6666","978473@qq.com","yong","reguser",$mysubject,$mycontent);
+	
+	
+	//$isend=iSendMail("daju1984@126.com","daju6666","daju2@126.com","daju1984","daju2",$mysubject,$mycontent);
+	
+	
+	$isend=iSendMail("daju1984@126.com","daju6666","daju1984@sina.com","daju1984","daju2",$mysubject,$mycontent);
+	
+	
+	//$isend=iSendMail("daju1984@126.com","daju6666","jobwz@qq.com","daju1984","daju2",$mysubject,$mycontent);
+	
+	//$isend=iSendMail("q838149211@sina.com","110XXX520","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
 	//$isend=iSendMail("m13538257788@163.com","tel135382577889","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
 
 	//$isend=iSendMail("838149211@qq.com","password","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
@@ -28,7 +40,7 @@ function iSendMail($sendFrom,$myPass,$sendTo,$fromName,$toName,$mysubject,$mycon
 	//Ask for HTML-friendly debug output
 	$mail->Debugoutput = 'html';
 
-		$mail_sel=1;//qq邮箱没试成功
+		$mail_sel=3;//qq邮箱没试成功
 		
 		//Set the hostname of the mail server
 		if($mail_sel==1)
@@ -38,6 +50,10 @@ function iSendMail($sendFrom,$myPass,$sendTo,$fromName,$toName,$mysubject,$mycon
 		else if($mail_sel==2)
 		{
 			$mail->Host = "smtp.163.com";
+		}
+		else if($mail_sel==3)
+		{
+			$mail->Host = "smtp.126.com";
 		}
 		else
 		{
