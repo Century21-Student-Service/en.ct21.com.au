@@ -18,7 +18,7 @@ function iSendMailEx($mysubject,$mycontent)
 	
 	//$isend=iSendMail("daju1984@126.com","daju6666","jobwz@qq.com","daju1984","daju2",$mysubject,$mycontent);
 	
-	//$isend=iSendMail("q838149211@sina.com","110XXX520","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
+	//$isend=iSendMail("q838149211@sina.com","110110520","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
 	//$isend=iSendMail("m13538257788@163.com","tel135382577889","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
 
 	//$isend=iSendMail("838149211@qq.com","password","q838149211@sina.com","yong","reguser",$mysubject,$mycontent);
