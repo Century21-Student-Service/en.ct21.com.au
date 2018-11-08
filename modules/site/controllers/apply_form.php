@@ -316,7 +316,7 @@ if (isset($_POST['submit'])) {
   $object->setComment($comment);
   
   
-  /*
+  /**/
 //--------------------------------发邮件相关-----------beg--------------------------
 	
 		$date_bm=date('YmdHis',time());
@@ -369,7 +369,7 @@ if (isset($_POST['submit'])) {
 		}
 		
 	//--------------------------------发邮件相关-----------end--------------------------
-  */
+  
   
   // proceed for $passport
   $files = explode("\n", trim($passport));

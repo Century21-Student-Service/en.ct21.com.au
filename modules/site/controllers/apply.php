@@ -1,5 +1,6 @@
 <?php
 /** handle submission **/
+/*
 if (isset($_POST['submit'])) {
   $content = "<table>";
   foreach ($_POST as $key => $val) {
@@ -15,8 +16,9 @@ if (isset($_POST['submit'])) {
   sendemailAdmin($settings['sitename'] . " - Apply for course", $content);
   Message::register(new Message(Message::SUCCESS, 'Thank you for your application. We will contact you soon!'));
 }
+*/
 
-
+/*
 $html = new HTML();
 $html->renderOut('site/components/html_header', array(
     'title' => 'Apply for a course',
@@ -27,16 +29,17 @@ $html->output('<div id="page-container">');
 //$html->renderOut('site/components/toptoolbar');
 $html->renderOut('site/components/header');
 $html->renderOut('site/apply', array(
-    'full_page_sidebar_right' => $html->render('site/components/full_page_sidebar_right', array(
+    'full_page_sidebar_right00000' => $html->render('site/components/full_page_sidebar_right', array(
       'blocks' => array(
           Block::findByName('Get in Touch')
         )
     ))
 ));
 $html->renderOut('site/components/footer');
-$html->output('</div>');
-$html->renderOut('site/components/page_footer');
+//$html->output('</div>');
+$html->output(dirname(__FILE__).'9999999'.'</div>');
+//$html->renderOut('site/components/page_footer');
 
-$html->renderOut('site/components/html_footer');
+//$html->renderOut('site/components/html_footer');
 
-
+*/

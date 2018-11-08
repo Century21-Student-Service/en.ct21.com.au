@@ -29,11 +29,14 @@ $html->renderOut('site/page/default', array(
           Block::findByName('Get in Touch')
 		  /**/,
           Block::findByName('Apply Now')
+		 
         )
     ))
 ));
 $html->renderOut('site/components/footer');
-$html->output('</div>');
+//$html->output('</div>');
+$html->output(dirname(__FILE__).'88888888___'.$_SERVER['SCRIPT_NAME'].'</div>');
+ 
 $html->renderOut('site/components/page_footer');
 
 $html->renderOut('site/components/html_footer');
