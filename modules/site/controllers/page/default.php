@@ -27,15 +27,17 @@ $html->renderOut('site/page/default', array(
     'full_page_sidebar_right' => $html->render('site/components/full_page_sidebar_right', array(
       'blocks' => array(
           Block::findByName('Get in Touch')
-		  /**/,
-          Block::findByName('Apply Now')
+		  ,
+          Block::findByName($page->getUri()=='apply'?'':'Apply Now')
+          /*,Block::findByName('Apply Now')*/
 		 
         )
     ))
 ));
 $html->renderOut('site/components/footer');
-//$html->output('</div>');
-$html->output(dirname(__FILE__).'88888888___'.$_SERVER['SCRIPT_NAME'].'</div>');
+$html->output('</div>');
+//var_dump($page->getUri());
+//$html->output(dirname(__FILE__).'____7777777___'.$_SERVER['ALL_HTTP'].'</div>');
  
 $html->renderOut('site/components/page_footer');
 
