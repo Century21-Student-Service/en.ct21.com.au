@@ -7,7 +7,7 @@
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title><?php echo isset($title) ? $title : ''; ?></title>

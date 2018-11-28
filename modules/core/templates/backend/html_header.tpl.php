@@ -6,8 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="<?php echo get_language(); ?>" dir="ltr"><!--<![endif]-->
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="HosterDIY content delivery team">
   <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
