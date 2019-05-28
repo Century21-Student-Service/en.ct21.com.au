@@ -55,7 +55,7 @@ CREATE TABLE `application` (
 
 LOCK TABLES `application` WRITE;
 /*!40000 ALTER TABLE `application` DISABLE KEYS */;
-INSERT INTO `application` VALUES (9,'Ibrahima Diallo','02/march/1990','GuinÃ©e Conakry/ratoma/cobaya','cky','00224662874942','00224621102686','','brahimd32@gmail','university','univerty nongo Conakry','','Australia','australian university','business and management','Hello, im a poor and ambtious student, i really need help to show My competences. Hope you we be able to help me. Thank you','','','','','',1448747487),(11,'liujiadan','2001.11.28','','','','13272323113','','@2053844681','é«˜ä¸­','æˆç« ','','Australia','','','','','','','','',1480134352),(16,'Imran ahmad','19.3.2002','','','','03067591303','','03067591303','12th','Govt.high school keleskey','','Australia','','','','','','','','',1535517960);
+INSERT INTO `application` VALUES (16,'Imran ahmad','19.3.2002','','','','03067591303','','03067591303','12th','Govt.high school keleskey','','Australia','','','','','','','','',1535517960);
 /*!40000 ALTER TABLE `application` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -446,4 +446,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-28  5:00:01
+-- Dump completed on 2019-05-29  5:00:01
