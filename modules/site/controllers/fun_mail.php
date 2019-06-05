@@ -13,9 +13,7 @@ function iSendMailEx($mysubject,$mycontent)
 	//$isend=iSendMail("daju1984@126.com","daju6666","daju2@126.com","daju1984","daju2",$mysubject,$mycontent);
 	
 	
-	$isend=iSendMail("daju1984@126.com","daju6666","info@ct21.com.au","daju1984","ct21",$mysubject,$mycontent);
-	
-	//$isend=iSendMail("daju1984@126.com","daju6666","info@ct21.com.au","daju1984","info",$mysubject,$mycontent);
+	$isend=iSendMail("daju1984@126.com","daju6666","george@ct21.com.au","daju1984","daju2",$mysubject,$mycontent);
 	//$isend=iSendMail("daju1984@126.com","daju6666","daju1984@sina.com","daju1984","daju2",$mysubject,$mycontent);
 	
 	
