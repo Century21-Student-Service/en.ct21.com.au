@@ -93,8 +93,8 @@ class BasePage extends DBObject {
       return $mysqli->query('
 CREATE TABLE IF NOT EXISTS `page` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `uri` VARCHAR(31) NOT NULL UNIQUE ,
-  `title` VARCHAR(127) NOT NULL ,
+  `uri` VARCHAR(127) NOT NULL UNIQUE ,
+  `title` VARCHAR(255) NOT NULL ,
   `controller` VARCHAR(127) DEFAULT "page/default" ,
   `content` TEXT ,
   `published` TINYINT DEFAULT 1 ,

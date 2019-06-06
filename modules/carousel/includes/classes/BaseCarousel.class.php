@@ -93,8 +93,8 @@ class BaseCarousel extends DBObject {
       return $mysqli->query('
 CREATE TABLE IF NOT EXISTS `carousel` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `title` VARCHAR(31) NOT NULL ,
-  `image` VARCHAR(127) NOT NULL ,
+  `title` VARCHAR(255) NOT NULL ,
+  `image` VARCHAR(255) NOT NULL ,
   `content` VARCHAR(255) ,
   `button_text` VARCHAR(127) ,
   `button_link` VARCHAR(255) ,

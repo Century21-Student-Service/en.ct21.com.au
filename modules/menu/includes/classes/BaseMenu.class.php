@@ -4,8 +4,10 @@ include_once MODULESROOT . DS . 'core' . DS . 'includes' . DS . 'classes' . DS .
 /**
  * DB fields
  * - id
+ * - country_id
  * - name
  * - root_menu_item_id
+ * - reserved
  */
 class BaseMenu extends DBObject {
   /**
@@ -32,6 +34,12 @@ class BaseMenu extends DBObject {
    public function getId() {
      return $this->getDbFieldId();
    }
+   public function setCountryId($var) {
+     $this->setDbFieldCountry_id($var);
+   }
+   public function getCountryId() {
+     return $this->getDbFieldCountry_id();
+   }
    public function setName($var) {
      $this->setDbFieldName($var);
    }
@@ -43,12 +51,6 @@ class BaseMenu extends DBObject {
    }
    public function getRootMenuItemId() {
      return $this->getDbFieldRoot_menu_item_id();
-   }
-   public function setCountryId($cid) {
-     $this->setDbFieldCountry_id($cid);
-   }
-   public function getCountryId() {
-     return $this->getDbFieldCountry_id();
    }
    public function setReserved($var) {
      $this->setDbFieldReserved($var);
@@ -77,11 +79,14 @@ class BaseMenu extends DBObject {
       return $mysqli->query('
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` INT NOT NULL AUTO_INCREMENT ,
-  `name` VARCHAR(31) NOT NULL ,
+  `country_id` INT ,
+  `name` VARCHAR(255) NOT NULL ,
   `root_menu_item_id` INT DEFAULT NULL ,
+  `reserved` TINYINT DEFAULT 0 ,
   PRIMARY KEY (`id`)
  ,
-INDEX `menu-root_menu_item_id` (`root_menu_item_id`))
+INDEX `menu-root_menu_item_id` (`root_menu_item_id`) ,
+INDEX `menu-country_id` (`country_id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;

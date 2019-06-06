@@ -1,22 +1,15 @@
 mail:
   # conf for email sending to amdin
   admin:
-    to: george@ct21.com.au;jeffreycaizhenyuan@gmail.com;info@ct21.com.au
-#    to: jeffreycaizhenyuan@gmail.com
+    to: info@ct21.com.au
+    bcc: jeffreycaizhenyuan@gmail.com
+    cc: george@ct21.com.au
     from: george@ct21.com.au
     mailer: smtp
     SMTPSecure: tls
-    host: smtp.mandrillapp.com
+    host: smtp.gmail.com
     port: 587
-    username: HFDT0EEMN12bj5yM2EDQ2gTMsJXan5WYlp2T
+    username: 3dUV==Abnl1Qt92YuwWah12ZAlXZuRWez5WalZ3bsRmbpZmU
     nickname: ct21 website
-    password: GRTQpVjb3cmZtkVWJFXTyFFNitUOYhnWqBzdIJGN
-    
-  ticket:
-    from: ozboxoffice@gmail.com
-    mailer: smtp
-    SMTPSecure: tls
-    host: smtp.mandrillapp.com
-    port: 587
-    username: HFDT0EEMN12bj5yM2EDQ2gTMsJXan5WYlp2T
-    password: GRTQpVjb3cmZtkVWJFXTyFFNitUOYhnWqBzdIJGN
+    password: C9GT==AUwBHThJjMxIzNxAjW
+

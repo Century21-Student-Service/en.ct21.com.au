@@ -1,5 +1,9 @@
 <?php
+require_once('bootstrap.php');
 
-phpinfo();
+$settings = Vars::getSettings();
 
-?>
+echo encrypt('findloveinsydney@gmail.com');
+echo "\n";
+echo encrypt('0172122a');
+echo "\n";

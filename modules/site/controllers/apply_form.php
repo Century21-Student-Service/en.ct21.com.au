@@ -4,15 +4,6 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-//--------------mail about---------------------
-//var_dump(dirname(__FILE__).'/../PHPMailer2/PHPMailerAutoload.php');
-require dirname(__FILE__).'/../PHPMailer2/PHPMailerAutoload.php';
-require dirname(__FILE__).'/../PHPMailer2/fun.php';
-require dirname(__FILE__).'/fun_mail.php';
-//---------------------------------------------
-
-
-
 
 // handle form submission
 if (isset($_POST['submit'])) {
@@ -52,21 +43,6 @@ if (isset($_POST['submit'])) {
   }
   else
   {
-		/*
-		$mail_succeed=false;
-	
-		if($isend==true)
-		{			
-			$mail_succeed=true;
-		}
-		else
-		{			
-			$mail_succeed=false;
-		}
-		//---------------------------------------------
-		*/
-
-		
   }
   
   // validation for $qq
@@ -315,60 +291,6 @@ if (isset($_POST['submit'])) {
   // proceed for $comment
   $object->setComment($comment);
   
-  
-  /**/
-//--------------------------------发邮件相关-----------beg--------------------------
-	
-		$date_bm=date('YmdHis',time());
-		//$name=$name;
-		//$dob=$dob;
-		//$dob=$dob;
-		//$mobile =$mobile;
-		//$email =$email;
-		//$education =$education;
-		//$graduate_institution =$graduate_institution;
-		//--------------mail about---------------------
-		$sTitle=" your apply course result @ [$date_bm] ";
-		$sContent="name [$name]\r\n";
-		$sContent=$sContent."dob [$dob]\r\n";
-		$sContent=$sContent."mobiles [$mobile]\r\n";
-		$sContent=$sContent."email  [$email ]\r\n";
-		$sContent=$sContent."education  [$education ]\r\n";
-		$sContent=$sContent."graduate_institution  [$graduate_institution ]\r\n";
-		$isend=iSendMailEx($sTitle,$sContent);
-		
-		$mail_succeed=false;
-	
-		if($isend==true)
-		{			
-			$mail_succeed=true;
-		}
-		else
-		{			
-			$mail_succeed=false;
-		}
-		
-		
-		
-		if($mail_succeed==true)
-		{	
-			
-			//$data='{"tishi":"1","pass":"mypass"}';
-			//$data='{"tishi":"1","pass":"'.$pass.'"}';
-			
-			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send succeed,err:7777", "zh" => "邮件发送成功,err:7777"))));
-			//$error_flag = false;
-			
-		}
-		else
-		{
-			//$data='{"tishi":"0","pass":"null"}';
-			
-			Message::register(new Message(Message::DANGER, i18n(array("en" => "mail send fail,err:8888", "zh" => "邮件发送失败,err:8888"))));
-			$error_flag = true;
-		}
-		
-	//--------------------------------发邮件相关-----------end--------------------------
   
   
   // proceed for $passport
