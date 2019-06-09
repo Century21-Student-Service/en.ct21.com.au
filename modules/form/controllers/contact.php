@@ -5,6 +5,8 @@ if (isset($_POST['submit'])) {
   $email = isset($_POST['contact']['email']) ? trim(strip_tags($_POST['contact']['email'])) : null;
   $name = isset($_POST['contact']['name']) ? trim(strip_tags($_POST['contact']['name'])) : null;
   $msg = isset($_POST['contact']['message']) ? trim(strip_tags($_POST['contact']['message'])) : null;
+  $phone = isset($_POST['contact']['phone']) ? trim(strip_tags($_POST['contact']['phone'])) : null;
+  $country = isset($_POST['contact']['country']) ? trim(strip_tags($_POST['contact']['country'])) : null;
 
   /**  validation **/
   $messages = array();
@@ -29,6 +31,18 @@ if (isset($_POST['submit'])) {
     $messages[] = new Message(Message::DANGER, i18n(array(
         'en' => 'Please enter your message',
         'zh' => '请填写您的留言'
+    )));
+  }
+  if (empty($phone)) {
+    $messages[] = new Message(Message::DANGER, i18n(array(
+        'en' => 'Please enter your phone',
+        'zh' => '请填写您的联系电话'
+    )));
+  }
+  if (empty($country)) {
+    $messages[] = new Message(Message::DANGER, i18n(array(
+        'en' => 'Please enter your country',
+        'zh' => '请填写您的国家'
     )));
   }
 

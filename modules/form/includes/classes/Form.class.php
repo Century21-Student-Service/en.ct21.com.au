@@ -64,6 +64,14 @@ jQuery(function($){
       <label for="email">'.i18n(array('en' => 'E-mail', 'zh' => '电子邮箱')).$mandatory_label.'</label>
       <input class="form-control" type="email" name="contact[email]" id="email" required="">
     </div>
+    <div class="form-group form-field-phone">
+      <label for="phone">'.i18n(array('en' => 'Phone', 'zh' => '联系电话')).$mandatory_label.'</label>
+      <input class="form-control" type="phone" name="contact[phone]" id="phone" required="">
+    </div>
+    <div class="form-group form-field-country">
+      <label for="country">'.i18n(array('en' => 'Country', 'zh' => '国家')).$mandatory_label.'</label>
+      <input class="form-control" type="country" name="contact[country]" id="country" required="">
+    </div>
     <div class="form-group form-field-message">
       <label for="message">'.i18n(array('en' => 'Message', 'zh' => '留言')).$mandatory_label.'</label>
       <textarea id="message" name="contact[message]" rows="5" class="form-control" required=""></textarea>
