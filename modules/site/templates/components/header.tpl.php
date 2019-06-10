@@ -15,6 +15,7 @@
           <span class="fa fa-facebook"></span>
         </a>
       </li>
+<!--
       <li class="google-plus">
         <a target="_blank" title="Google+" href="https://plus.google.com/u/0/112700728169168801572/posts">
           <span class="fa fa-google-plus"></span>
@@ -25,6 +26,7 @@
           <span class="fa fa-google-plus"></span>
         </a>
       </li>
+-->
       <li class="twitter">
         <a target="_blank" title="Twitter" href="https://twitter.com/Century21_SSC">
           <span class="fa fa-twitter"></span>
