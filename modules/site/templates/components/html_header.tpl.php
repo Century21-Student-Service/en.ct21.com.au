@@ -13,9 +13,11 @@
 <?php if (module_enabled('meta')): ?>
   <?php $meta_uri = isset($meta_uri) ? $meta_uri : Meta::getCurrentUri() ?>
   <?php $meta = Meta::findByUri($meta_uri) ?>
-  <meta name="copyright" content="<?php echo htmlentities($meta->getCopyright()) ?>" />
-  <meta name="desciption" content="<?php echo htmlentities($meta->getDescription()) ?>" />
-  <meta name="keywords" content="<?php echo htmlentities($meta->getKeywords()) ?> />
+  <?php if ($meta): ?>
+    <meta name="copyright" content="<?php echo htmlentities($meta->getCopyright()) ?>" />
+    <meta name="desciption" content="<?php echo htmlentities($meta->getDescription()) ?>" />
+    <meta name="keywords" content="<?php echo htmlentities($meta->getKeywords()) ?> />
+  <?php endif; ?>
 <?php endif; ?>
 
 
