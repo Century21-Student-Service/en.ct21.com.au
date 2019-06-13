@@ -1,0 +1,22 @@
+routing:
+
+  admin_meta_list:
+    path: ^\/admin\/meta\/list\/?$
+    isSecure: 1
+    i18n: 1
+    controller: meta/backend/meta_list
+  admin_meta_edit:
+    path: ^\/admin\/meta\/edit\/(\d+)\/?$
+    isSecure: 1
+    i18n: 1
+    controller: meta/backend/meta_edit
+  admin_meta_create:
+    path: ^\/admin\/meta\/create\/?$
+    isSecure: 1
+    i18n: 1
+    controller: meta/backend/meta_create
+  admin_meta_delete:
+    path: ^\/admin\/meta\/delete\/(\d+)\/?$
+    isSecure: 1
+    i18n: 0
+    controller: meta/backend/meta_delete

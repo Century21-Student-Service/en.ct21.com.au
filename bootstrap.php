@@ -14,6 +14,7 @@ if (isset($custom_modules)) {
       'core',
       'database',
       'form',
+      'meta',
       'log',
       'site',
       'mail',

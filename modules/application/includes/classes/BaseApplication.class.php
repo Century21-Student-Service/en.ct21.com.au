@@ -205,7 +205,7 @@ CREATE TABLE IF NOT EXISTS `application` (
   `phone` VARCHAR(15) ,
   `mobile` VARCHAR(15) ,
   `qq` VARCHAR(15) ,
-  `email` VARCHAR(15) ,
+  `email` VARCHAR(50) ,
   `education` VARCHAR(255) ,
   `graduate_institution` VARCHAR(255) ,
   `ielts` VARCHAR(15) ,

@@ -6,7 +6,8 @@ $html->renderOut('site/components/html_header', array(
         'en' => 'Page not found',
         'zh' => '没有找到页面'
     )),
-    'body_class' => 'page page-template page-template-templates page-template-full-width page-template-templatesfull-width-php has-toolbar'
+    'body_class' => 'page page-template page-template-templates page-template-full-width page-template-templatesfull-width-php has-toolbar',
+    'meta_uri' => '/404'
 ));
 
 $html->output('<div id="page-container">');
@@ -25,6 +26,8 @@ $html->renderOut('site/components/footer');
 $html->output('</div>');
 $html->renderOut('site/components/page_footer');
 
-$html->renderOut('site/components/html_footer');
+$html->renderOut('site/components/html_footer', array(
+    'meta_uri' => '/404'
+));
 
 

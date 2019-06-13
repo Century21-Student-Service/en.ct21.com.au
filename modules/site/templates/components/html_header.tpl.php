@@ -10,6 +10,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<?php if (module_enabled('meta')): ?>
+  <?php $meta_uri = isset($meta_uri) ? $meta_uri : Meta::getCurrentUri() ?>
+  <?php $meta = Meta::findByUri($meta_uri) ?>
+  <meta name="copyright" content="<?php echo htmlentities($meta->getCopyright()) ?>" />
+  <meta name="desciption" content="<?php echo htmlentities($meta->getDescription()) ?>" />
+  <meta name="keywords" content="<?php echo htmlentities($meta->getKeywords()) ?> />
+<?php endif; ?>
+
+
   <title><?php echo isset($title) ? $title : ''; ?></title>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 
