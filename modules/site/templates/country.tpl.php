@@ -61,7 +61,7 @@
 <?php foreach ($institutions as $i): ?>
         <div class="card">
           <div class="left">
-            <img src="<?php echo uri($i->getImage()) ?>" />
+            <a href="<?php echo uri('institution/' . $i->getId()) ?>"><img src="<?php echo uri($i->getImage()) ?>" /></a>
           </div>
           <div class="right">
             <h3><a href="<?php echo uri('institution/' . $i->getId()) ?>"><?php echo $i->getTitle() ?></a></h3>
