@@ -25,7 +25,7 @@
   <tbody>
     <?php foreach ($objects as $object): ?>
     <tr>
-            <td><?php echo $object->getUri() ?></td>
+            <td><a target="_blank" href="<?php echo $object->getUri() ?>"><?php echo $object->getUri() ?></a></td>
             <td>
         <div class="btn-group">
           <a class="btn btn-default btn-sm" href="<?php echo uri('admin/meta/edit/' . $object->getId()); ?>"><i class="fa fa-edit"></i></a>
