@@ -34,6 +34,7 @@
   <div class='col-sm-10'>
     <textarea name='image' style='display: none;'></textarea>
     <div class='file-fields'></div>
+  <div>360x224 px for best effect</div>
 
   </div>
 </div>
@@ -207,6 +208,7 @@ tr.html(addImageRow(false, true));
   <div class='col-sm-10'>
     <textarea name='slider_images' style='display: none;'></textarea>
     <div class='file-fields' style='border: 1px solid #999; padding: 6px;'></div>
+  <div>360x224 px for best effect</div>
   <button style='margin-top:6px;' class='add btn btn-primary btn-sm' type='button'><?php echo i18n(array('en' => 'Add image', 'zh' => '添加图片')) ?></button>
   </div>
 </div>
