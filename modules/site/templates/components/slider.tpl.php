@@ -4,7 +4,7 @@
 <?php foreach ($carousels as $carousel): ?>
       <li class="slide overlay active">
         <div class="slide-image">
-          <img src="<?php echo $carousel->getImage() ?>" alt="<?php echo htmlentities($carousel->getTitle()); ?>">
+          <img src="<?php echo uri($carousel->getImage()) ?>" alt="<?php echo htmlentities($carousel->getTitle()); ?>">
         </div>
         <div class="slide-caption light left">
           <div class="container">

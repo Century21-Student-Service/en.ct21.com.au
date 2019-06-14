@@ -4,7 +4,8 @@ country:
     id: INT NOT NULL AUTO_INCREMENT
     name: VARCHAR(31) NOT NULL
     image: VARCHAR(255)
-    banner_image: VARCHAR(255)
+#    banner_image: VARCHAR(255)
+    slider_images: VARCHAR(1024)
     content: TEXT
   form:
     fields:
@@ -20,14 +21,23 @@ country:
           upload_dir: files/country
           transform:
             dimension: 360x224
-      banner_image:
+#      banner_image:
+#        widget: image
+#        widget_conf:
+#          required: 1
+#          multiple: 0
+#          upload_dir: files/country/banner
+#          transform:
+#            dimension: 1140x385
+      slider_images:
         widget: image
         widget_conf:
-          required: 1
-          multiple: 0
-          upload_dir: files/country/banner
+          required: 0
+          multiple: 1
+          upload_dir: files/fields/slider_images
           transform:
             dimension: 1140x385
+            refill: "255,255,255"
       content:
         widget: textarea
         widget_conf:

@@ -6,7 +6,7 @@ if (is_cli()) {
   $country = new Country();
   $country->setName('Australia');
   $country->setImage('modules/site/assets/images/australia.jpg');
-  $country->setBannerImage('modules/site/assets/images/australia_banner.jpg');
+//  $country->setBannerImage('modules/site/assets/images/australia_banner.jpg');
   $country->setContent('
 <h2>Special Tuition Fee Offer</h2>
 <p>Through our long-standing professional and conscientious services, we have built up our reputation and established a high degree of trust with students, their parents and institutions. We have a very high success rate for student visa applications, and all these factors have led to an excellent service for our students</p>
@@ -33,7 +33,7 @@ if (is_cli()) {
   $country = new Country();
   $country->setName('New Zealand');
   $country->setImage('modules/site/assets/images/newzealand.jpg');
-  $country->setBannerImage('modules/site/assets/images/newzealand.jpg');
+//  $country->setBannerImage('modules/site/assets/images/newzealand.jpg');
   $country->setContent('
 <h2>A brief summary</h2>
 <p>Children attend nursery schools at about five years old and at seven they start their six years of primary education. After completing year 6, at around 13 years old, they then pursue their four years of junior secondary education, which they complete in year 10. They then take another 3 year to complete their senior high school. Students at around 17 or 18 may embark on their higher education at the Universities, Polytechnics, Colleges of Education or private training institutes.</p>
@@ -43,7 +43,7 @@ if (is_cli()) {
   $country = new Country();
   $country->setName('Japan');
   $country->setImage('modules/site/assets/images/japan.jpg');
-  $country->setBannerImage('modules/site/assets/images/japan_banner.jpg');
+//  $country->setBannerImage('modules/site/assets/images/japan_banner.jpg');
   $country->setContent('
 <h2>Study in Japan</h2>
 <p>Educational System of Japan
@@ -67,7 +67,7 @@ With an aim to foster the necessary vocational abilities, technical secondary sc
   $country = new Country();
   $country->setName('USA');
   $country->setImage('modules/site/assets/images/usa.jpg');
-  $country->setBannerImage('modules/site/assets/images/usa_banner.jpg');
+//  $country->setBannerImage('modules/site/assets/images/usa_banner.jpg');
   $country->setContent('
 <h2>Introduction to Educational System of the USA</h2>
 <p>Postsecondary education institutions in the United States generally are ofthree broad types, each of which includes both public and private institutions: (1)two-year colleges, usually called community, junior, or technical colleges; (2) fouryearcolleges, which usually offer either four years of general undergraduate education (liberal arts) or a combination of general and preprofessional education; and (3) comprehensive universities, which offer both undergraduate and graduate education as well as professional degrees. Institutional titles can be confusing, however, because states have different regulations and traditions. For example, many institutions called "universities" do not offer degrees beyond the master\'s degree; some offer no degrees beyond the bachelor\'s degree. Some "colleges" offer doctorates. A few prestigious comprehensive research universities in the country are known as "institutes" (for example, California Institute of Technology and Massachusetts Institute of Technology). In addition, there are institutions called colleges, institutes, or universities that are not accredited but that offer degrees and certificates.</p>
@@ -77,7 +77,7 @@ With an aim to foster the necessary vocational abilities, technical secondary sc
   $country = new Country();
   $country->setName('China');
   $country->setImage('modules/site/assets/images/china.jpg');
-  $country->setBannerImage('modules/site/assets/images/china_banner.jpg');
+//  $country->setBannerImage('modules/site/assets/images/china_banner.jpg');
   $country->setContent('
 <h2>An Introduction to China</h2>
 <p>China is staggeringly vast and a land of great diversity.It is the world\'s most populous nation and the third largest country, almost a continent in itself.

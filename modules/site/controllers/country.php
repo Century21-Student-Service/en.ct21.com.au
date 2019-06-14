@@ -12,9 +12,12 @@ $html->renderOut('site/components/html_header', array(
 $html->output('<div id="page-container">');
 //$html->renderOut('site/components/toptoolbar');
 $html->renderOut('site/components/header');
-$html->renderOut('site/components/banner', array(
+$html->renderOut('site/components/secondary_slider', array(
     'country' => $country
 ));
+//$html->renderOut('site/components/banner', array(
+//    'country' => $country
+//));
 $html->renderOut('site/country', array(
     'breadcrumb' => $html->render('site/components/breadcrumb', array(
         'items' => array(

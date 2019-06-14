@@ -6,7 +6,7 @@ include_once MODULESROOT . DS . 'core' . DS . 'includes' . DS . 'classes' . DS .
  * - id
  * - name
  * - image
- * - banner_image
+ * - slider_images
  * - content
  */
 class BaseCountry extends DBObject {
@@ -46,11 +46,11 @@ class BaseCountry extends DBObject {
    public function getImage() {
      return $this->getDbFieldImage();
    }
-   public function setBannerImage($var) {
-     $this->setDbFieldBanner_image($var);
+   public function setSliderImages($var) {
+     $this->setDbFieldSlider_images($var);
    }
-   public function getBannerImage() {
-     return $this->getDbFieldBanner_image();
+   public function getSliderImages() {
+     return $this->getDbFieldSlider_images();
    }
    public function setContent($var) {
      $this->setDbFieldContent($var);
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `country` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(31) NOT NULL ,
   `image` VARCHAR(255) ,
-  `banner_image` VARCHAR(255) ,
+  `slider_images` VARCHAR(1024) ,
   `content` TEXT ,
   PRIMARY KEY (`id`)
 )

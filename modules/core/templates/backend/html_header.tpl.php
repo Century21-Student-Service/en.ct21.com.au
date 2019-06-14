@@ -14,6 +14,7 @@
   <title><?php echo $title; ?></title>
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo uri('modules/core/assets/jquery-ui-1.11.4.custom/jquery-ui.js', false) ?>"></script>
 <script type="text/javascript">
   var site = jQuery();
   site.settings = <?php echo HTML::renderSettingsInJson() ?>;

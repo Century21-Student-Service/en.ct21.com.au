@@ -202,19 +202,19 @@ tr.html(addImageRow(false, true));
   });
 </script>
   
-<div class='form-group' id='banner_image'>
-  <label class='col-sm-2 control-label'>banner_image <span style="color: rgb(185,2,0); font-weight: bold;">*</span></label>
+<div class='form-group' id='slider_images'>
+  <label class='col-sm-2 control-label'>slider_images </label>
   <div class='col-sm-10'>
-    <textarea name='banner_image' style='display: none;'></textarea>
-    <div class='file-fields'></div>
-
+    <textarea name='slider_images' style='display: none;'></textarea>
+    <div class='file-fields' style='border: 1px solid #999; padding: 6px;'></div>
+  <button style='margin-top:6px;' class='add btn btn-primary btn-sm' type='button'><?php echo i18n(array('en' => 'Add image', 'zh' => '添加图片')) ?></button>
   </div>
 </div>
 <div class='hr-line-dashed'></div>
 
 <?php
   // get json string of prepopulated image links
-  $prepopulate = $object->isNew() ? '' : $object->getBannerImage();
+  $prepopulate = $object->isNew() ? '' : $object->getSliderImages();
   if ($prepopulate != '') {
     $tokens = explode("\n", trim($prepopulate));
     $prepopulate = array();
@@ -226,7 +226,11 @@ tr.html(addImageRow(false, true));
 
 <script>
   $(function(){
-    var container = $('#banner_image');
+    var container = $('#slider_images');
+
+    $('.file-fields', container).sortable({
+      update: function(event, ui) {updateHiddenTextarea(container);}
+    });
 
     // initial value to pop
     var initial_images = <?php echo $prepopulate == '' ? '""' : json_encode($prepopulate); ?>;
@@ -243,13 +247,13 @@ tr.html(addImageRow(false, true));
 
     updateHiddenTextarea(container);
     // action when click select file button
-    $(document).on('click', '#banner_image .select', function(){
+    $(document).on('click', '#slider_images .select', function(){
       var tr = $(this).parents('.file-field');
       $('input[type=file]', tr).click();
       $('.upload', tr).prop('disabled', false);
     });
     // action when file filed is changed (we do validation here)
-    $(document).on('change', '#banner_image input[type=file]', function(){
+    $(document).on('change', '#slider_images input[type=file]', function(){
       var tr = $(this).parents('.file-field');
       var file = this.files[0];
       if (!file.type.match(/^image/)) {
@@ -265,12 +269,12 @@ tr.html(addImageRow(false, true));
       }
     });
     // action when adding an new image row
-    $(document).on('click', '#banner_image .add', function(){
+    $(document).on('click', '#slider_images .add', function(){
       var html = addImageRow(false, true);
       $('.file-fields', container).append(html);
     });
     // action when uploading image via ajax
-    $(document).on('click', '#banner_image .upload', function(){
+    $(document).on('click', '#slider_images .upload', function(){
       var tr = $(this).parents('.file-field');
       var file_field = $('input[type=file]', tr);
       var file = file_field[0].files[0];
@@ -280,7 +284,7 @@ tr.html(addImageRow(false, true));
       $('.btn', tr).prop('disabled', true);
       $('.upload i', tr).removeClass('fa-upload').addClass('fa-spin').addClass('fa-spinner');
       $.ajax({
-        url: '<?php echo uri("modules/destination/controllers/backend/country_form_field_banner_image.php" ,false) ?>',
+        url: '<?php echo uri("modules/destination/controllers/backend/country_form_field_slider_images.php" ,false) ?>',
         type: 'POST',
         data: formData,
         cache: false,
@@ -306,7 +310,7 @@ tr.html(addImageRow(false, true));
       });
     });
     // action when removing an image
-    $(document).on('click', '#banner_image .remove', function(){
+    $(document).on('click', '#slider_images .remove', function(){
       var tr = $(this).parents('.file-field');
       if (typeof($(this).data('uri')) !== 'undefined') {
         var img = $(this).data('uri');
@@ -314,16 +318,16 @@ tr.html(addImageRow(false, true));
         $('.remove i', tr).addClass('fa-spin').addClass('fa-spinner').removeClass('fa-remove');
         // ajax to remove the image
         $.ajax({
-          url: '<?php echo uri("modules/destination/controllers/backend/country_form_field_banner_image"."_remove.php" ,false) ?>?path=' + encodeURIComponent(img),
+          url: '<?php echo uri("modules/destination/controllers/backend/country_form_field_slider_images"."_remove.php" ,false) ?>?path=' + encodeURIComponent(img),
           type: 'POST',
           dataType: 'json',
           success: function(data, textStatus, jqXHR) {
             if (typeof(data.error) !== 'undefined') {
               alert('<?php echo i18n(array('en' => 'Error: ', 'zh' => '错误: ')) ?>' + data.error);
-tr.html(addImageRow(false, true));
+tr.fadeOut(function(){tr.remove();});
               updateHiddenTextarea(container);
             } else {
-tr.html(addImageRow(false, true));
+tr.fadeOut(function(){tr.remove();});
               updateHiddenTextarea(container);
             }
           },
@@ -335,7 +339,7 @@ tr.html(addImageRow(false, true));
           }
         });
       } else {
-
+tr.fadeOut();
       }
     });
 
