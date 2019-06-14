@@ -125,7 +125,7 @@ CREATE TABLE `country` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(31) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
-  `banner_image` varchar(255) DEFAULT NULL,
+  `slider_images` varchar(1024) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
@@ -137,7 +137,7 @@ CREATE TABLE `country` (
 
 LOCK TABLES `country` WRITE;
 /*!40000 ALTER TABLE `country` DISABLE KEYS */;
-INSERT INTO `country` VALUES (1,'Australia','files/country/30june07-4_meitu_4_188.jpg','modules/site/assets/images/australia_banner.jpg','<p><span style=\"font-size:18px\">Study in Australia</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><img alt=\"\" src=\"/files/upload/images/yale/yale1.jpg\" style=\"height:34px; width:50px\" />&nbsp;</span><a href=\"http://en.ct21.com.au/study-in-australia/au\" style=\"text-decoration-line: none; color: inherit; font-family: &quot;Open Sans&quot;, arial, helvetica, sans-serif; font-size: 14px;\">Australia&#39;s English Language Intensive Courses for Overseas Students (ELICOS)</a></p>\r\n'),(2,'New Zealand','modules/site/assets/images/newzealand.jpg','modules/site/assets/images/newzealand.jpg','<h2>Study in New Zealand</h2>\r\n'),(3,'Japan','modules/site/assets/images/japan.jpg','modules/site/assets/images/japan_banner.jpg','<h1>Study in Japan</h1>\r\n'),(4,'USA','modules/site/assets/images/usa.jpg','modules/site/assets/images/usa_banner.jpg','<h2>Study in the USA</h2>\r\n'),(5,'China','modules/site/assets/images/china.jpg','files/country/banner/_______341.jpg','<p>China Study</p>\r\n');
+INSERT INTO `country` VALUES (1,'Australia','files/country/30june07-4_meitu_4_188.jpg','files/fields/slider_images/australia_418.jpg\r\nmodules/site/assets/images/australia_banner.jpg','<p><span style=\"font-size:18px\">Study in Australia</span></p>\r\n\r\n<p><span style=\"font-size:18px\"><img alt=\"\" src=\"/files/upload/images/yale/yale1.jpg\" style=\"height:34px; width:50px\" />&nbsp;</span><a href=\"http://en.ct21.com.au/study-in-australia/au\" style=\"text-decoration-line: none; color: inherit; font-family: &quot;Open Sans&quot;, arial, helvetica, sans-serif; font-size: 14px;\">Australia&#39;s English Language Intensive Courses for Overseas Students (ELICOS)</a></p>\r\n'),(2,'New Zealand','modules/site/assets/images/newzealand.jpg','files/fields/slider_images/newzealand_225.jpg\r\nfiles/fields/slider_images/newzealand2_556.jpg','<h2>Study in New Zealand</h2>\r\n'),(3,'Japan','modules/site/assets/images/japan.jpg','modules/site/assets/images/japan_banner.jpg\r\nfiles/fields/slider_images/japan_649.jpg','<h1>Study in Japan</h1>\r\n'),(4,'USA','modules/site/assets/images/usa.jpg','files/fields/slider_images/usa_726.jpg\r\nmodules/site/assets/images/usa_banner.jpg','<h2>Study in the USA</h2>\r\n'),(5,'China','modules/site/assets/images/china.jpg','files/fields/slider_images/china_743.jpg\r\nfiles/country/banner/_______341.jpg','<p>China Study</p>\r\n');
 /*!40000 ALTER TABLE `country` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -304,7 +304,7 @@ CREATE TABLE `meta` (
   `description` varchar(1024) DEFAULT NULL,
   `keywords` varchar(1024) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -313,7 +313,7 @@ CREATE TABLE `meta` (
 
 LOCK TABLES `meta` WRITE;
 /*!40000 ALTER TABLE `meta` DISABLE KEYS */;
-INSERT INTO `meta` VALUES (1,'/','Ct21 Student service','The best student service in Australia','ct21, student service'),(2,'/404',NULL,NULL,NULL),(3,'/news',NULL,NULL,NULL),(4,'/study-tour',NULL,NULL,NULL),(5,'/china/studytour',NULL,NULL,NULL),(6,'/japan/studytour',NULL,NULL,NULL),(7,'/about',NULL,NULL,NULL),(8,'/introduction/about-us',NULL,NULL,NULL),(9,'/strength/about-us',NULL,NULL,NULL),(10,'/service/about-us',NULL,NULL,NULL),(11,'/migration-agent/about-us',NULL,NULL,NULL),(12,'/co-operation/contact-us',NULL,NULL,NULL),(13,'/contact',NULL,NULL,NULL),(14,'/apply',NULL,NULL,NULL),(15,'/news/10',NULL,NULL,NULL),(16,'/news/12',NULL,NULL,NULL),(17,'/news/7',NULL,NULL,NULL),(18,'/news/1',NULL,NULL,NULL),(19,'/news/4',NULL,NULL,NULL),(20,'/news/8',NULL,NULL,NULL),(21,'/country/1',NULL,NULL,NULL),(22,'/country/2',NULL,NULL,NULL),(23,'/country/3',NULL,NULL,NULL),(24,'/country/4',NULL,NULL,NULL),(25,'/country/5',NULL,NULL,NULL),(26,'/institution/29',NULL,NULL,NULL),(27,'/course/2',NULL,NULL,NULL),(28,'/migration-course/NATTI',NULL,NULL,NULL),(29,'/institution/37',NULL,NULL,NULL),(30,'/institution/5',NULL,NULL,NULL),(31,'/institution/34',NULL,NULL,NULL),(32,'/institution/22',NULL,NULL,NULL);
+INSERT INTO `meta` VALUES (1,'/','Ct21 Student service','The best student service in Australia','ct21, student service'),(2,'/404',NULL,NULL,NULL),(3,'/news',NULL,NULL,NULL),(4,'/study-tour',NULL,NULL,NULL),(5,'/china/studytour',NULL,NULL,NULL),(6,'/japan/studytour',NULL,NULL,NULL),(7,'/about',NULL,NULL,NULL),(8,'/introduction/about-us',NULL,NULL,NULL),(9,'/strength/about-us',NULL,NULL,NULL),(10,'/service/about-us',NULL,NULL,NULL),(11,'/migration-agent/about-us',NULL,NULL,NULL),(12,'/co-operation/contact-us',NULL,NULL,NULL),(13,'/contact',NULL,NULL,NULL),(14,'/apply',NULL,NULL,NULL),(15,'/news/10',NULL,NULL,NULL),(16,'/news/12',NULL,NULL,NULL),(17,'/news/7',NULL,NULL,NULL),(18,'/news/1',NULL,NULL,NULL),(19,'/news/4',NULL,NULL,NULL),(20,'/news/8',NULL,NULL,NULL),(21,'/country/1',NULL,NULL,NULL),(22,'/country/2',NULL,NULL,NULL),(23,'/country/3',NULL,NULL,NULL),(24,'/country/4',NULL,NULL,NULL),(25,'/country/5',NULL,NULL,NULL),(26,'/institution/29',NULL,NULL,NULL),(27,'/course/2',NULL,NULL,NULL),(28,'/migration-course/NATTI',NULL,NULL,NULL),(29,'/institution/37',NULL,NULL,NULL),(30,'/institution/5',NULL,NULL,NULL),(31,'/institution/34',NULL,NULL,NULL),(32,'/institution/22',NULL,NULL,NULL),(33,'/institution/16',NULL,NULL,NULL),(34,'/institution/18',NULL,NULL,NULL),(35,'/course/1',NULL,NULL,NULL),(36,'/institution/21',NULL,NULL,NULL),(37,'/institution/4',NULL,NULL,NULL),(38,'/institution/9',NULL,NULL,NULL),(39,'/institution/33',NULL,NULL,NULL),(40,'/institution/35',NULL,NULL,NULL),(41,'/institution/32',NULL,NULL,NULL),(42,'/institution/27',NULL,NULL,NULL),(43,'/institution/8',NULL,NULL,NULL),(44,'/institution/13',NULL,NULL,NULL),(45,'/institution/17',NULL,NULL,NULL),(46,'/institution/24',NULL,NULL,NULL),(47,'/higher-edu/us',NULL,NULL,NULL),(48,'/study-in-australia/au',NULL,NULL,NULL),(49,'/institution/20',NULL,NULL,NULL),(50,'/HSK/china',NULL,NULL,NULL),(51,'/course/14',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `meta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -500,4 +500,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-14  5:00:01
+-- Dump completed on 2019-06-15  5:00:01
