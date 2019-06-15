@@ -304,7 +304,7 @@ CREATE TABLE `meta` (
   `description` varchar(1024) DEFAULT NULL,
   `keywords` varchar(1024) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -313,7 +313,7 @@ CREATE TABLE `meta` (
 
 LOCK TABLES `meta` WRITE;
 /*!40000 ALTER TABLE `meta` DISABLE KEYS */;
-INSERT INTO `meta` VALUES (1,'/','Ct21 Student service','The best student service in Australia','ct21, student service'),(2,'/404',NULL,NULL,NULL),(3,'/news',NULL,NULL,NULL),(4,'/study-tour',NULL,NULL,NULL),(5,'/china/studytour',NULL,NULL,NULL),(6,'/japan/studytour',NULL,NULL,NULL),(7,'/about',NULL,NULL,NULL),(8,'/introduction/about-us',NULL,NULL,NULL),(9,'/strength/about-us',NULL,NULL,NULL),(10,'/service/about-us',NULL,NULL,NULL),(11,'/migration-agent/about-us',NULL,NULL,NULL),(12,'/co-operation/contact-us',NULL,NULL,NULL),(13,'/contact',NULL,NULL,NULL),(14,'/apply',NULL,NULL,NULL),(15,'/news/10',NULL,NULL,NULL),(16,'/news/12',NULL,NULL,NULL),(17,'/news/7',NULL,NULL,NULL),(18,'/news/1',NULL,NULL,NULL),(19,'/news/4',NULL,NULL,NULL),(20,'/news/8',NULL,NULL,NULL),(21,'/country/1',NULL,NULL,NULL),(22,'/country/2',NULL,NULL,NULL),(23,'/country/3',NULL,NULL,NULL),(24,'/country/4',NULL,NULL,NULL),(25,'/country/5',NULL,NULL,NULL),(26,'/institution/29',NULL,NULL,NULL),(27,'/course/2',NULL,NULL,NULL),(28,'/migration-course/NATTI',NULL,NULL,NULL),(29,'/institution/37',NULL,NULL,NULL),(30,'/institution/5',NULL,NULL,NULL),(31,'/institution/34',NULL,NULL,NULL),(32,'/institution/22',NULL,NULL,NULL),(33,'/institution/16',NULL,NULL,NULL),(34,'/institution/18',NULL,NULL,NULL),(35,'/course/1',NULL,NULL,NULL),(36,'/institution/21',NULL,NULL,NULL),(37,'/institution/4',NULL,NULL,NULL),(38,'/institution/9',NULL,NULL,NULL),(39,'/institution/33',NULL,NULL,NULL),(40,'/institution/35',NULL,NULL,NULL),(41,'/institution/32',NULL,NULL,NULL),(42,'/institution/27',NULL,NULL,NULL),(43,'/institution/8',NULL,NULL,NULL),(44,'/institution/13',NULL,NULL,NULL),(45,'/institution/17',NULL,NULL,NULL),(46,'/institution/24',NULL,NULL,NULL),(47,'/higher-edu/us',NULL,NULL,NULL),(48,'/study-in-australia/au',NULL,NULL,NULL),(49,'/institution/20',NULL,NULL,NULL),(50,'/HSK/china',NULL,NULL,NULL),(51,'/course/14',NULL,NULL,NULL);
+INSERT INTO `meta` VALUES (1,'/','Ct21 Student service','The best student service in Australia','ct21, student service'),(2,'/404',NULL,NULL,NULL),(3,'/news',NULL,NULL,NULL),(4,'/study-tour',NULL,NULL,NULL),(5,'/china/studytour',NULL,NULL,NULL),(6,'/japan/studytour',NULL,NULL,NULL),(7,'/about',NULL,NULL,NULL),(8,'/introduction/about-us',NULL,NULL,NULL),(9,'/strength/about-us',NULL,NULL,NULL),(10,'/service/about-us',NULL,NULL,NULL),(11,'/migration-agent/about-us',NULL,NULL,NULL),(12,'/co-operation/contact-us',NULL,NULL,NULL),(13,'/contact',NULL,NULL,NULL),(14,'/apply',NULL,NULL,NULL),(15,'/news/10',NULL,NULL,NULL),(16,'/news/12',NULL,NULL,NULL),(17,'/news/7',NULL,NULL,NULL),(18,'/news/1',NULL,NULL,NULL),(19,'/news/4',NULL,NULL,NULL),(20,'/news/8',NULL,NULL,NULL),(21,'/country/1',NULL,NULL,NULL),(22,'/country/2',NULL,NULL,NULL),(23,'/country/3',NULL,NULL,NULL),(24,'/country/4',NULL,NULL,NULL),(25,'/country/5',NULL,NULL,NULL),(26,'/institution/29',NULL,NULL,NULL),(27,'/course/2',NULL,NULL,NULL),(28,'/migration-course/NATTI',NULL,NULL,NULL),(29,'/institution/37',NULL,NULL,NULL),(30,'/institution/5',NULL,NULL,NULL),(31,'/institution/34',NULL,NULL,NULL),(32,'/institution/22',NULL,NULL,NULL),(33,'/institution/16',NULL,NULL,NULL),(34,'/institution/18',NULL,NULL,NULL),(35,'/course/1',NULL,NULL,NULL),(36,'/institution/21',NULL,NULL,NULL),(37,'/institution/4',NULL,NULL,NULL),(38,'/institution/9',NULL,NULL,NULL),(39,'/institution/33',NULL,NULL,NULL),(40,'/institution/35',NULL,NULL,NULL),(41,'/institution/32',NULL,NULL,NULL),(42,'/institution/27',NULL,NULL,NULL),(43,'/institution/8',NULL,NULL,NULL),(44,'/institution/13',NULL,NULL,NULL),(45,'/institution/17',NULL,NULL,NULL),(46,'/institution/24',NULL,NULL,NULL),(47,'/higher-edu/us',NULL,NULL,NULL),(48,'/study-in-australia/au',NULL,NULL,NULL),(49,'/institution/20',NULL,NULL,NULL),(50,'/HSK/china',NULL,NULL,NULL),(51,'/course/14',NULL,NULL,NULL),(52,'/uni/nz',NULL,NULL,NULL),(53,'/four-year/us',NULL,NULL,NULL),(54,'/institution/3',NULL,NULL,NULL),(55,'/higher-edu/au',NULL,NULL,NULL),(56,'/institution/25',NULL,NULL,NULL),(57,'/course/12',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `meta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -500,4 +500,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-06-15  5:00:01
+-- Dump completed on 2019-06-16  5:00:01
