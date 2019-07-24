@@ -16,13 +16,13 @@
   <?php if ($meta): ?>
     <meta name="copyright" content="<?php echo htmlentities($meta->getCopyright()) ?>" />
     <meta name="desciption" content="<?php echo htmlentities($meta->getDescription()) ?>" />
-    <meta name="keywords" content="<?php echo htmlentities($meta->getKeywords()) ?> />
+    <meta name="keywords" content="<?php echo htmlentities($meta->getKeywords()) ?>" />
   <?php endif; ?>
 <?php endif; ?>
 
 
   <title><?php echo isset($title) ? $title : ''; ?></title>
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script type="text/javascript">
   var site = jQuery();
