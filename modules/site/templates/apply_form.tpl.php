@@ -56,6 +56,7 @@
 </div>
 <div class='hr-line-dashed'></div>
   
+<!--
 <div class='form-group field-full-width'>
   <label class='col-sm-2 control-label' for='qq'>QQ </label>
   <div class='col-sm-10'>
@@ -63,6 +64,7 @@
   </div>
 </div>
 <div class='hr-line-dashed'></div>
+-->
   
 <div class='form-group field-full-width'>
   <label class='col-sm-2 control-label' for='email'>Email <span style="color: rgb(185,2,0); font-weight: bold;">*</span></label>
@@ -73,7 +75,7 @@
 <div class='hr-line-dashed'></div>
   
 <div class='form-group field-full-width'>
-  <label class='col-sm-2 control-label' for='education'>Education <span style="color: rgb(185,2,0); font-weight: bold;">*</span></label>
+  <label class='col-sm-2 control-label' for='education'>Qualification <span style="color: rgb(185,2,0); font-weight: bold;">*</span></label>
   <div class='col-sm-10'>
     <input value='<?php echo htmlentities(str_replace('\'', '"', ($object->isNew() ? (isset($_POST['education']) ? strip_tags($_POST['education']) : '') : $object->getEducation()))) ?>' type='text' class='form-control' id='education' name='education'  required />
   </div>
