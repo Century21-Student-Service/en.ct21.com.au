@@ -2,7 +2,7 @@ news:
   pk: id
   fields:
     id: INT NOT NULL AUTO_INCREMENT
-    title: VARCHAR(255) NOT NULL
+    title: VARCHAR(512) NOT NULL
     summary: TEXT
     content: TEXT
     thumbnail: VARCHAR(128)

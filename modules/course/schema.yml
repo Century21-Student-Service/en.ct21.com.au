@@ -3,7 +3,7 @@ course:
   fields:
     id: INT NOT NULL AUTO_INCREMENT
     country_id: INT NOT NULL
-    title: VARCHAR(127)
+    title: VARCHAR(512)
     url: VARCHAR(512)
     content: TEXT
     weight: INT DEFAULT 0
