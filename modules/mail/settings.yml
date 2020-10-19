@@ -1,7 +1,9 @@
 mail:
   # conf for email sending to amdin
   admin:
-    to: info@ct21.com.au
+    to:
+      - info@ct21.com.au
+      - Grace.chiang@ct21.com.au
     bcc: jeffreycaizhenyuan@gmail.com
     cc: george@ct21.com.au
     from: george@ct21.com.au

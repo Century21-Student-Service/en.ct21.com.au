@@ -31,8 +31,12 @@ function sendemailAdmin($subject, $msg) {
     $mail->Port       = $settings['mail']['admin']['port'];                   // set the SMTP port for the GMAIL server
     $mail->Username   = $username;  // GMAIL username
     $mail->Password   = $password;            // GMAIL password
-    $mail->AddReplyTo($settings['mail']['admin']['to']);
-    $mail->AddAddress($settings['mail']['admin']['to']);
+    $mail->AddReplyTo($settings['mail']['admin']['to'][0]);
+
+    foreach ($settings['mail']['admin']['to'] as $to) {
+      $mail->AddAddress($to);
+    }
+
     $mail->addBCC($settings['mail']['admin']['bcc']);
     $mail->addCC($settings['mail']['admin']['cc']);
     $mail->SetFrom($settings['mail']['admin']['from'], $settings['mail']['admin']['nickname']);
