@@ -4,6 +4,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
+$error_flag = false;
 
 // handle form submission
 if (isset($_POST['submit'])) {
@@ -11,7 +12,7 @@ if (isset($_POST['submit'])) {
 
 	
 	
-  $error_flag = false;
+#  $error_flag = false;
   $object = new Application();
   /// validation
   
@@ -377,7 +378,9 @@ if (isset($_POST['submit'])) {
     if ($object->save()) {
       Message::register(new Message(Message::SUCCESS, i18n(array("en" => "Thanks for your application. We will come back to you as soon as possible.", "zh" => "记录保存成功"))));
       sendemailAdmin('Apply for course', '<p>A new application for course has just been submitted: <br /><a href="http://en.ct21.com.au/admin/application/edit/'.$object->getId().'">http://en.ct21.com.au/admin/application/edit/'.$object->getId().'</a></p>');
-      HTML::forwardBackToReferer();
+//      HTML::forwardBackToReferer();
+      HTML::forward('apply-form?submitted=1');
+      exit();
     } else {
       Message::register(new Message(Message::DANGER, i18n(array("en" => "Record failed to save", "zh" => "记录保存失败"))));
     }
@@ -412,7 +415,8 @@ $html->renderOut('site/apply_form', array(
       'blocks' => array(
           Block::findByName('Get in Touch')
         )
-    ))
+    )),
+    'error_flag' => $error_flag
 ));
 $html->renderOut('site/components/footer');
 $html->output('</div>');

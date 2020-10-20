@@ -5,8 +5,10 @@
         <div class="dm3-two-third">
           <h1 class="entry-title">Apply your course</h1>
 <?php echo Message::renderMessages() ?>
+
+<?php if (!isset($_GET['submitted']) || $_GET['submitted'] != 1 || $error_flag): ?>
           
-<form class="form-horizontal" role="form" method="POST" action="<?php echo uri('apply-form', false) ?>">
+<form class="form-horizontal" role="form" method="POST" action="<?php echo uri('apply-form', false) ?>?submitted=1">
   
 <div class='form-group field-full-width'>
   <label class='col-sm-2 control-label' for='name'>Name <span style="color: rgb(185,2,0); font-weight: bold;">*</span></label>
@@ -653,6 +655,11 @@ $(function() {
       'zh' => '创建'
   )) ?></button>
 </form>
+<?php else: ?>
+
+<p> You've already submitted the form. <a href='<?php echo uri('apply-form') ?>'>Click here</a> to reload form to submit again. </p>
+
+<?php endif ?>
           
           
         </div>
